@@ -1,0 +1,241 @@
+<HTML>
+
+<HEAD>
+	<TITLE>Methaan</TITLE>
+
+	<STYLE type="text/css">
+		BODY {
+			font-family: Comic Sans MS, sans-serif;
+			background: white;
+			margin-left: 10px;
+			margin-right: 10px
+		}
+
+		P {
+			font-family: Comic Sans MS, sans-serif
+		}
+
+		TD {
+			font-family: Comic Sans MS, sans-serif
+		}
+
+		UL {
+			font-family: Comic Sans MS, sans-serif
+		}
+
+		OL {
+			font-family: Comic Sans MS, sans-serif
+		}
+
+		H2 {
+			font-family: Comic Sans MS, sans-serif;
+			color: orange
+		}
+
+		H3 {
+			font-family: Comic Sans MS, sans-serif;
+			color: blue
+		}
+
+		H4 {
+			font-family: Comic Sans MS, sans-serif;
+			color: blue
+		}
+
+		H5 {
+			font-family: Comic Sans MS, sans-serif;
+			color: red
+		}
+	</STYLE>
+
+
+	<link rel="stylesheet" type="text/css" href="./css/themes/default/kekule.css" />
+	<script src="./js/three.min.js"></script>
+	<script src="./js/raphael.min.js"></script>
+	<script src="./js/kekule/kekule.min.js"></script>
+
+	<script src="./js/moiscript.js" language="JavaScript"></script>
+</HEAD>
+
+<b style="color:red;">Hier werkt van alles nog niet. Het automatisch roteren van moleculen moet werken. Voor de rest
+	weet ik niet wat er wel en niet ondersteund wordt door kekule.js</b>
+
+<!-- <BODY onload="init_chime()"> -->
+<A NAME="TOP"> </A>
+<h3>1. Ruimtelijke structuren</h3>
+<TABLE WIDTH=95% BORDER=1 CELLSPACING=2 CELLPADDING=2>
+
+	<H4>Introductie</H4>
+	<P>
+		De volgende modellen zijn koolwaterstoffen, moleculen bestaande uit koolstof- en waterstofatomen. Er zijn
+		verschillende groepen koolwaterstoffen: bijvoorbeeld alkanen, cycloalkanen, alkenen en alkynen.
+		<br><I>Alkanen</I> zijn koolwaterstoffen met enkelvoudige bindingen tussen de koolstof-atomen.<br>Vormen
+		deze atomen een ring, dan spreken we van <I>cycloalkanen</I>.
+
+
+		<BR><I> Alkenen</I> zijn koolwaterstoffen met ��n of meer dubbele bindingen, dus
+		minstens &eacute;&eacute;n extra binding tussen twee atomen.
+		<BR>
+		<I>Alkynen</I> zijn koolwaterstoffen met ��n of meer drievoudige bindingen, dus tussen twee atomen drie
+		bindingen.
+		<BR>
+		Deze klassen hebben elk hun karakteristieke kenmerken voor de ruimtelijke
+		structuur, die we hieronder behandelen.
+	</p>
+
+	<H4>1a. Methaan</H4>
+	<P>
+		Methaan, het simpelste alkaan, is het hoofdbestanddeel van aardgas.
+		Methaan is kleur- en reukloos, daarom voegt men bij het aardgasbedrijf geurstoffen toe aan het gas zodat
+		mensen gewaarschuwd worden door de geur. Verder is het een slecht in water oplosbaar gas, dat vloeibaar
+		wordt bij -164 �C. Het is zeer brandbaar en kan met lucht een explosief mengsel vormen. <BR>
+		Koolwaterstoffen waarin geen dubbele bindingen voorkomen zijn opgebouwd uit <I>tetraeders</I>. Een tetraeder
+		is een regelmatig viervlak; een driehoekig grondvlak mat drie opstaande zijden. Aan de hand van de volgende
+		vier modellen wordt je duidelijk hoe deze vorm opgebouwd is.</p>
+
+	<TR VALIGN=TOP>
+		<TD bgcolor="#cccccc">
+			<h5>Model 1:</h5>
+			<P>
+				In dit model is een tetraeder afgebeeld. Door met de muis te slepen (linkermuisknop ingedrukt houden
+				en de muis bewegen) kun je het model roteren. Probeer zo de ruimtelijke vorm te zien.<br>
+				Een belangrijke eigenschap van deze tetraeder is dat de vier hoekpunten
+				equivalent zijn: ze zijn qua onderlinge orientatie niet van elkaar te
+				onderscheiden. Alle onderlinge afstanden en hoeken zijn gelijk.</P>
+		</TD>
+		<TD ALIGN=center bgcolor="#AADDFF" width="150">
+			<span style="display: block; width: 150px; height: 150px" data-widget="Kekule.ChemWidget.Viewer3D"
+				data-chem-obj="url(./modellen/tetraederzonderkern.mol)" data-predefined-setting="basic"
+				data-caption="tetraederzonderkern"></span>
+			<!-- <EMBED SRC="modellen/tetraederzonderkern.mol" frank=no name=tertaeder1 nomenus=true
+					script="zoom 300%;wireframe 15;color bonds blue" WIDTH="150" HEIGHT="150" BGCOLOR="#AADDFF"> -->
+		</TD>
+	</TR>
+
+	<TR VALIGN=TOP>
+		<TD bgcolor="#dddddd">
+			<h5>Model 2:</h5>
+			In dit model is maar een ding veranderd ten opzichte van het vorige model, de vier hoekpunten zijn met
+			lijnen verbonden met een donkergrijs punt in het
+			zwaartepunt van het viervlak. Zoals je weet bestaat de stof methaan uit een C-atoom en vier H-atomen.
+			Het donkergrijze punt wordt straks het C-atoom (Elke atoomsoort heeft in elk model dezelfde kleur. Elk
+			donkergrijs atoom is dus koolstof). De verbindingen vanaf de hoekpunten naar het donkere middelpunt zijn
+			werkelijk bestaande (covalente) atoombindingen.
+		</TD>
+		<TD ALIGN=RIGHT bgcolor="#AADDFF" width="150">
+			<span style="display: block; width: 150px; height: 150px" data-widget="Kekule.ChemWidget.Viewer3D"
+				data-chem-obj="url(./modellen/tetraedermetkern.mol)" data-predefined-setting="basic"
+				data-caption="tetraederzonderkern"></span>
+			<!-- <EMBED SRC="modellen/tetraedermetkern.mol" frank=no name=tertaeder2 nomenus=true script="zoom 300%;wireframe 20;select atomno=5,atomno=2,atomno=3,atomno=4;
+set bondmode and; color bonds blue; wireframe 10" WIDTH=150 HEIGHT=150 BGCOLOR="#AADDFF"> -->
+		</TD>
+	</TR>
+
+	<TR VALIGN=TOP>
+		<TD bgcolor="#cccccc">
+			<h5>Model 3:</h5>
+			Zoals je ziet zijn de hoekpunten vervangen door witte bollen, dit zijn H-atomen. Het middelpunt is nu
+			een donkergrijze bol geworden, dit is het C-atoom. De blauwe lijnen tussen de H-atomen zijn geen
+			bindingen, ze zijn alleen in het model aanwezig om de tetraeder zichtbaar te maken. De bindingen van de
+			H-atomen naar het C-atoom bestaan wel echt, en bestaan -zoals je weet- uit twee gemeenschappelijke
+			electronen van de twee atomen.
+		</TD>
+		<TD ALIGN=RIGHT bgcolor="#AADDFF" width="150">
+			<span style="display: block; width: 150px; height: 150px" data-widget="Kekule.ChemWidget.Viewer3D"
+				data-chem-obj="url(./modellen/tetraedermetkern.mol)" data-predefined-setting="basic"
+				data-caption="tetraederzonderkern"></span>
+			<!-- <EMBED SRC="modellen/tetraedermetkern.mol" frank=no name=tertaeder3 nomenus=true script="zoom 300%;wireframe 20; spacefill 80;select hydrogen; spacefill 50;select atomno=5,atomno=2,atomno=3,atomno=4;
+set bondmode and; color bonds blue; wireframe 5; select *" WIDTH=150 HEIGHT=150 BGCOLOR="#AADDFF"> -->
+		</TD>
+	</TR>
+
+	<TR VALIGN=TOP>
+		<TD bgcolor="#dddddd">
+			<h5>Model 4:</h5>
+			In dit model zijn de hulplijnen tussen de H-atomen weggelaten. Het molecuul is nu compleet. Bedenk in je
+			hoofd nu de lijnen tussen de H-atomen nog eens om het viervlak te zien. Je kunt dit model -net als alle
+			voorgaande- roteren met de muis. Ook kun je met deze knop de rotatie aan en uit zetten als je dat
+			makkelijker vindt om te bekijken.<BR>
+			<form>
+				<CENTER>
+					<font color=#0000FF size=+1>Rotatie </font>
+					<input type="button" value="aan" onclick="javascript:input_script('tertaeder4','spin on')">
+					<input type="button" value="uit" onclick="javascript:input_script('tertaeder4','spin off')">
+				</CENTER><BR>
+		</TD>
+		<TD ALIGN=RIGHT bgcolor="#AADDFF" width="150">
+			<span style="display: block; width: 150px; height: 150px" data-widget="Kekule.ChemWidget.Viewer3D"
+				data-chem-obj="url(./modellen/n-methaan.mol)" data-predefined-setting="basic"
+				data-caption="n-methaan.mol"></span>
+			<!-- <script language="JavaScript">
+					define_chime(window, 'tertaeder4', '150', '150', 'AnimFrameCallback=JSAnimcontrol', 'modellen/n-methaan.mol', 'wireframe 20;spacefill 80;zoom 300;rotate x 45;select hydrogen; spacefill 50;select *;center 1;set spin y 90;set picking distance;anim fps 1;anim frame next;animation off;background [xAADDFF]')
+				</script> -->
+		</TD>
+	</TR>
+</table>
+
+<P>Bepaal de regelmaat van deze laatste structuur door de onderlinge afstanden en hoeken te meten en te vergelijken.
+	De afstand wordt hier gemeten in &Aring;ngstrom, 10<sup>-10</sup> m, ofwel 1 &Aring; = 0,1 nm.</P>
+<input type="radio" name="meet" checked="checked"
+	onclick="javascript:input_script('tertaeder4','set picking distance')">
+Klik op deze knop en dan op twee atomen om een afstand ('distance')te meten<br>
+<input type="radio" name="meet" onclick="javascript:input_script('tertaeder4','set picking angle')">
+of op deze en op drie atomen om de tussenliggende hoek ('angle') te meten<br>
+
+</form>
+<form name="geom">
+	<input name="board2" value="geometrie" size="40">
+</form>
+
+Alle H...H afstanden en alle H-C-H hoeken moeten vrijwel gelijk zijn. Klopt dat?
+</P>
+<hr>
+<P>
+	In het volgende hoofdstuk gaan we methaan uitbreiden tot
+	<a href="ethaan.html">ethaan</a>.
+</P>
+
+
+<HR SIZE=2 WIDTH=100% ALIGN=Center>
+<BR>
+<CENTER>
+	<TABLE WIDTH=20% BORDER=0 CELLSPACING=2 CELLPADDING=2>
+		<TR VALIGN=TOP>
+			<TD ALIGN=RIGHT> <A HREF="index.html" onMouseOver="window.status='Terug'; return true;"
+					onMouseOut="window.status=' '; ">
+					<IMG SRC="knoppen/knop_links.jpg" ALIGN=Absmiddle Border=0></A></TD>
+			<TD> <A HREF="ethaan.html" onMouseOver="window.status='Volgende'; return true;"
+					onMouseOut="window.status=' '; ">
+					<IMG SRC="knoppen/knop_rechts.jpg" ALIGN=Absmiddle Border=0></A></TD>
+		</TR>
+	</TABLE>
+</CENTER>
+<BR><BR><BR>
+
+<script language="javascript">
+	function msgShow(tbchime, message) {
+		if (document.geom) {
+			window.status = message;
+			var result = /atom\s*#(\d)\s*:\s*(\w+)[^:]*:\s*([^\s\(]+)/i;
+			var normal = /atom:\s+(\w+)\s+(\d+)/i;
+			var selection = /atom\s*#(\d)\s*:[^\.]*\.(\w+)\s*\((\d+)/i;
+			if (normal.test(message)) {
+				var match = normal.exec(message);
+				document.geom.board2.value = match[1] + " " + match[2];
+			};
+			if (selection.test(message)) {
+				var match = selection.exec(message);
+				document.geom.board2.value = match[1] + " : " + match[2] + " " + match[3];
+			};
+			if (result.test(message)) {
+				var match = result.exec(message);
+				document.geom.board2.value = match[2] + " = " + match[3];
+			};
+		};
+	}
+	setOutput("tertaeder4", "Msg1", msgShow)
+	setOutput("tertaeder4", "Pick", msgShow)
+</script>
+</BODY>
+
+</HTML>
