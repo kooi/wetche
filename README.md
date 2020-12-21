@@ -10,36 +10,36 @@ Naar het werk van [Hens Borkent](mailto:borkent@cmbi.kun.nl). Vooralsnog zonder 
   - [ ] Opmaak
   - [ ] Inhoud
   1. Ruimtelijke structuren
-    - [ ] Methaan, tetraeder
+    a. Methaan, tetraeder
       - [ ] .mol laden
       - [ ] automatisch draaien
       - [ ] hoeken meten
-    - [ ] Ethaan
+    b. Ethaan
       - [ ] .mol laden
-    - [ ] Etheen, trigonale structuur
+    c. Etheen, trigonale structuur
       - [ ] .mol laden
-    - [ ] Ethyn, lineaire structuur
+    d. Ethyn, lineaire structuur
       - [ ] .mol laden
   2. Conformaties en Stereoisomeren
-    - Draaien in ethaan
+    a. Draaien in ethaan
       - [ ] .mol laden
-    - Draaien in etheen, cis/trans
+    b. Draaien in etheen, cis/trans
       - [x] .mol laden
   3. Cyclische structuren
-    - Cycloalkanen
+    a. Cycloalkanen
       - [ ] .mol laden
-    - Cyclohexaan, stoel en boot
+    b. Cyclohexaan, stoel en boot
       - [ ] .mol laden
-    - Cis en trans
+    c. Cis en trans
       - [ ] .mol laden
   4. Optische isomerie
-    - 1 asymmetrisch C atoom
+    a. 1 asymmetrisch C atoom
       - [ ] .mol laden
-    - 2 asymmetrische centra
+    b. 2 asymmetrische centra
       - [ ] .mol laden
-    - Optische activiteit
+    c. Optische activiteit
       - [ ] .mol laden
-    - Substitutie mechanismen
+    d. Substitutie mechanismen
       - [ ] .mol laden
   5. Een testje
     - [ ] .mol laden
