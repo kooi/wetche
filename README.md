@@ -1,6 +1,6 @@
 # wetche
 
-## [Organische Chemie - Stereochemie](https://github.io/kooi/wetche/stereo_kekulejs/index.html)
+## [Organische Chemie - Stereochemie](https://kooi.github.io/wetche/stereo_kekulejs/index.html)
 
 Update van een [lesmethode voor organische scheikunde](https://www3.cmbi.umcn.nl/wetche/vwo/stereo/) om gebruik te maken van [kekule.js](http://partridgejiang.github.io/Kekule.js/demos/index.html) ipv Chime.
 
