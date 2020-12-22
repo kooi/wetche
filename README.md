@@ -7,39 +7,35 @@ Update van een [lesmethode voor organische scheikunde](https://www3.cmbi.umcn.nl
 Naar het werk van [Hens Borkent](mailto:borkent@cmbi.kun.nl). Vooralsnog zonder toestemming met de aanname dat anno 2020 een bruikbare versie gewenst is. Werkelijke inhoud is geheel onveranderd.
 
 ## TODO
+
+Er is van alles te doen om dit te updaten. Grote stappen zijn:
   - [ ] Opmaak
-  - [ ] Inhoud
+  - [ ] HTML
+  - [ ] Statisch laden moleculen
+  - [ ] Dynamisch (onclick) laden moleculen
+  - [ ] Moleculen dynamisch maken (autorotate etc.)
+  - [ ] Energie-conformatie koppelen
+  - [ ] Energie-reactiecoordinaat koppelen
+  - [ ] Quiz implementeren 
+  - [ ] 'Extra' pagina's
+
   1. Ruimtelijke structuren
     a. Methaan, tetraeder
-      - [ ] .mol laden
-      - [ ] automatisch draaien
-      - [ ] hoeken meten
     b. Ethaan
-      - [ ] .mol laden
     c. Etheen, trigonale structuur
-      - [ ] .mol laden
     d. Ethyn, lineaire structuur
-      - [ ] .mol laden
   2. Conformaties en Stereoisomeren
     a. Draaien in ethaan
-      - [ ] .mol laden
+       extra: https://www3.cmbi.umcn.nl/wetche/vwo/stereo/editnl.html
+       extra: 'universitaire versie' https://www3.cmbi.umcn.nl/wetche/organic/mopjob.html
     b. Draaien in etheen, cis/trans
-      - [x] .mol laden
   3. Cyclische structuren
     a. Cycloalkanen
-      - [ ] .mol laden
     b. Cyclohexaan, stoel en boot
-      - [ ] .mol laden
     c. Cis en trans
-      - [ ] .mol laden
   4. Optische isomerie
     a. 1 asymmetrisch C atoom
-      - [ ] .mol laden
     b. 2 asymmetrische centra
-      - [ ] .mol laden
     c. Optische activiteit
-      - [ ] .mol laden
     d. Substitutie mechanismen
-      - [ ] .mol laden
   5. Een testje
-    - [ ] .mol laden

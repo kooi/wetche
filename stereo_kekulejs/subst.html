@@ -1,0 +1,189 @@
+
+<!-- saved from url=(0054)https://www3.cmbi.umcn.nl/wetche/vwo/stereo/subst.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>substitutie</title>
+
+
+<style type="text/css">
+BODY  {font-family: Comic Sans MS, sans-serif;background:white;margin-left:10px;margin-right:10px}
+P {font-family: Comic Sans MS, sans-serif}
+TD {font-family: Comic Sans MS, sans-serif}
+UL {font-family: Comic Sans MS, sans-serif}
+OL {font-family: Comic Sans MS, sans-serif}
+H2 {font-family: Comic Sans MS, sans-serif;color:orange}
+H3 {font-family: Comic Sans MS, sans-serif;color:orange}
+H4 {font-family: Comic Sans MS, sans-serif;color:orange}
+H5 {font-family: Comic Sans MS, sans-serif;color:red}
+</style>
+
+<script language="JavaScript">
+function JSAnimcontrol2( PlugName, FrameNo)
+	{	if ( FrameNo <= 17 )
+		var stage = "Broom vertrekt,\n koolstof wordt plat";
+ 		if (( FrameNo > 17 ) && ( FrameNo <= 30 ))
+   		var stage = "Water valt aan\n van DEZELFDE kant";   
+ 		if ( FrameNo == 31 )
+   		var stage = "product zal 'n proton ver-\n liezen om alcohol te vormen";
+     	//format the value of the text area:
+  	document.pleo.messageboard2.value = (FrameNo + 1) + ": " + stage;
+      	}
+
+function JSAnimcontrol1( PlugName, FrameNo)
+	{	if ( FrameNo <= 15 )
+   		var stage = "Broom vertrekt,\n koolstof wordt plat";
+ 		if (( FrameNo > 15 ) && ( FrameNo <= 28 ))
+   		var stage = "Water valt aan\n van ANDERE kant";
+ 		if ( FrameNo == 29 )
+   		var stage = "product zal 'n proton ver-\n liezen om alcohol te vormen";
+     	//format the value of the text area:
+  	document.pleo.messageboard1.value = (FrameNo + 1) + ": " + stage;
+      	}
+
+
+function popUp(theURL) {
+    var newWin=open(theURL,'substitutie', ' width=175,height=125,resizable=1,menubar=0,scrollbars=1');}
+
+
+</script>
+</head>
+<body>
+
+<h4>
+4d. Substitutie: de S<i><sub>N</sub></i>-mechanismen</h4>
+<p>
+
+Stereochemie speelt een belangrijke rol bij het ophelderen van het mechanisme
+van een reactie. Als voorbeeld gebruiken we de nucleofiele substitutie:
+het verdringen van een substituent (vaak, maar lang niet altijd een halogeen),
+door een andere groep met een vrij electronenpaar (vaak een negatief ion, maar
+ook water is een nucleofiel). 
+<br>Er zijn twee hoofd-mechanismen, met verschillende
+stereochemische implicaties. Door een stereochemische analyse van het product kunnen we
+afleiden wat het mechanisme geweest moet zijn.
+</p>
+<center>
+<table width="90%" border="0">
+<tbody><tr><td colspan="2">
+<h4>De S<sub>N</sub>1-reactie</h4>
+<p>
+Wat je eerst ziet is de S<i><sub>N</sub></i>1-reactie van <i>1-broom-1-fenyl-ethaan</i> in water. Die begint met het vertrek van het broom-ion, waarna een platte tussenstructuur wordt gevormd. Het water valt daarna of van dezelfde kant aan, of van de andere kant; beide mogelijkheden zijn even waarschijnlijk. <br> Ze zijn hieronder te bekijken met de animatiebesturing waarmee je inmiddels bekend bent.<br>De eerste stappen, het afsplitsen van het bromide
+ion, zijn voor beide identiek. Maar zo rond stap 20 - 25 is te zien dat de
+nieuwe koolstof-zuurstof binding in het ene geval boven het vlak, in het 
+andere geval onder het vlak gevormd wordt.
+<br>
+De getoonde producten moeten nog een H<sup>+</sup> verliezen (afstaan aan water bijvoorbeeld) om uiteindelijk een alcohol te vormen, maar dat is voor de
+stereochemie verder niet meer van belang.<br>
+<img src="./subst_files/question.gif" align="left">
+Zet aan het eind de beide producten naast elkaar om ze te vergelijken. <br>Zijn ze
+identiek of elkaars spiegelbeeld? Dit is wat lastig te zien, o.a. door de
+ aanwezigheid van de watermoleculen
+<br>Als de uitgangsstof optisch actief was, is het product dat dan ook?
+</p>
+</td></tr>
+<tr><td bgcolor="#AADDFF">
+
+<embed src="modellen/sn1_1.xyz" display3d="ball&amp;stick" startanim="false" width="350" height="300" nomenus="true" bgcolor="#AADDFF" animmode="once" script="zoom 180;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on" frank="no" animframecallback="JSAnimcontrol1" name="sn1a">
+</td>
+<td bgcolor="AADDFF">
+<embed src="modellen/sn1_2.xyz" display3d="ball&amp;stick" startanim="false" width="350" height="300" nomenus="true" bgcolor="#AADDFF" animmode="once" script="zoom 180;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on" frank="no" animframecallback="JSAnimcontrol2" name="sn1b">
+</td></tr><tr>
+<td bgcolor="FFFFFF" align="center">
+<form name="pleo">
+<textarea name="messageboard1" rows="2" cols="20">er zijn 30 stappen
+</textarea>
+</form></td><td bgcolor="FFFFFF" align="center">
+<textarea name="messageboard2" rows="2" cols="20">er zijn 32 stappen
+</textarea>
+
+</td></tr>
+<tr><td bgcolor="AADDFF" align="center">
+<font color="#FFFF00" size="+1">
+Een stap vooruit <embed type="application/x-spt" width="16" height="16" button="push" target="sn1a" script="animation direction +1; anim frame next"> <br>
+Animatie aan/uit <embed type="application/x-spt" width="16" height="16" button="toggle" target="sn1a" script="animation on" altscript="animation off"> <br>
+Een stap achteruit <embed type="application/x-spt" width="16" height="16" button="push" target="sn1a" script="animation direction -1; anim frame next">
+</font>
+</td>
+<td bgcolor="AADDFF" align="center">
+<font color="#FFFF00" size="+1">
+Een stap vooruit <embed type="application/x-spt" width="16" height="16" button="push" target="sn1b" script="animation direction +1; anim frame next"><br>
+Animatie aan/uit <embed type="application/x-spt" width="16" height="16" button="toggle" target="sn1b" script="animation on" altscript="animation off"> <br>
+Een stap achteruit <embed type="application/x-spt" width="16" height="16" button="push" target="sn1b" script="animation direction -1; anim frame next"><br>
+</font>
+
+</td></tr></tbody></table>
+<p>
+<table width="90%" border="0" cellspacing="2">
+<tbody><tr valign="TOP"><td colspan="2">
+<h4>De S<sub>N</sub>2-reactie</h4>
+<p>
+Deze reactie laten we aan twee moleculen plaatsvinden. Links chloormethaan, simpel
+en overzichtelijk. Rechts een wat grotere, chirale uitgangsstof: 2-broomoctaan.<br>
+Het nucleofiel is links het bromide ion, rechts het hydroxyl-ion, OH<sup>-</sup>.<br>
+Zoals je ziet nadert het bromide-ion het chloormethaan-molekuul van de 'achter'kant, maakt het een binding met het C-atoom waarna de tetraeder omklapt en de chloor (als Cl<sup>-</sup>) afsplitst. Ergens halverwege zijn zowel broom
+als chloor nog met een 'lange' binding aan de koolstof gebonden. Het 'omklappen'
+wordt inversie genoemd: de nieuwe groep komt niet op plaats van de oude,
+maar juist aan de andere kant, de structuur wordt geïnverteerd.<br>
+Dit is een substitutie-reactie volgens het S<i><sub>N</sub></i>2 mechanisme.<br>
+<img src="./subst_files/question.gif" align="left">
+Kijk opnieuw naar de producten, vooral dat van het octaan-derivaat. Opnieuw is de vraag:
+als het 2-broomoctaan optisch actief was, is het product, 2-octanol dat dan ook?
+</p>
+</td>
+</tr><tr>
+<td bgcolor="AADDFF" width="30%">
+<embed align="abscenter" src="modellen/sn2.xyz" display3d="ball&amp;stick" startanim="false" width="250" height="250" nomenus="true" bgcolor="#AADDFF" animmode="once" script="zoom 200;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on" frank="no" name="sn2a"><br>
+<center><font color="#FFFF00" size="+1">Animatie Aan/Uit  </font>
+<embed type="application/x-spt" width="16" height="16" button="toggle" target="sn2a" script="animation on" altscript="animation off"> 
+</center></td>
+<td bgcolor="AADDFF">
+<embed align="abscenter" src="modellen/sn2octane.xyz" display3d="ball&amp;stick" startanim="false" width="450" height="250" nomenus="true" bgcolor="#AADDFF" animmode="once" script="zoom 200;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on" frank="no" name="sn2b"><br>
+<center><font color="#FFFF00" size="+1">Animatie Aan/Uit  </font>
+<embed type="application/x-spt" width="16" height="16" button="toggle" target="sn2b" script="animation on" altscript="animation off"> </center>
+</td>
+
+</tr>
+</tbody></table></p></center>
+<p>
+<img src="./subst_files/question.gif" align="left">
+Kreeg je verschillende antwoorden op de vragen bij de twee mechanismen?<br>
+Zo ja, dan weet je nu hoe je met stereochemie het onderscheid tussen 
+S<i><sub>N</sub></i>1 en S<i><sub>N</sub></i>2 kunt maken!
+<br>
+Zo nee, begin dan nog eens bovenaan en bekijk de modellen goed. 
+Kijk tenslotte naar het 
+<a href="javascript:popUp(&#39;snantw.html&#39;);">
+<img src="./subst_files/knop_antwoord.jpg" border="0"></a>.
+
+<br><br><br>
+Om te onthouden: de S<i><sub>N</sub></i>1-reactie begint met <b>1</b> molecuul (wat
+uiteenvalt), de S<i><sub>N</sub></i>2-reactie begint met <b>2</b> moleculen, die
+samen reageren.
+</p>
+<p>
+Dit is het einde van dit module over stereochemie. Als je wilt kun je nog een <a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/final.html">test</a> doen.<br>
+Er zijn nog andere modules over Polymeerchemie, Spectroscopie en Enzymen.
+<br>
+De pijl hieronder brengt je terug bij de beginpagina.
+</p>
+<hr size="2" width="100%" align="Center">
+<br>
+<center>
+<table width="50%" border="0" cellspacing="2" cellpadding="2">
+<tbody><tr valign="TOP">
+	<td align="RIGHT">	<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/optact.html" onmouseover="window.status=&#39;Vorige&#39;; return true;" onmouseout="window.status=&#39; &#39;; "> 
+				<img src="./subst_files/knop_links.jpg" align="Absmiddle" border="0"></a></td>
+<td><a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/final.html">test</a></td>
+
+	<td>			<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/index.html" onmouseover="window.status=&#39;Volgende&#39;; return true;" onmouseout="window.status=&#39; &#39;; "> 
+				<img src="./subst_files/knop_rechts.jpg" align="Absmiddle" border="0"></a></td>
+</tr></tbody></table></center>
+
+
+ 
+
+ 
+
+
+</body><style id="stylish-2" class="stylish" type="text/css">.form-control {
+    width: 100% !important;
+}</style></html>
