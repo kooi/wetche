@@ -1,0 +1,439 @@
+<!-- TODO -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title>Draaien ethaan</title>
+
+    <style type="text/css">
+      #ball {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      BODY {
+        font-family: Comic Sans MS, sans-serif;
+        background: white;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      P {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      TD {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      UL {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      OL {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      H2 {
+        font-family: Comic Sans MS, sans-serif;
+        color: green;
+      }
+      H3 {
+        font-family: Comic Sans MS, sans-serif;
+        color: green;
+      }
+      H4 {
+        font-family: Comic Sans MS, sans-serif;
+        color: green;
+      }
+      H5 {
+        font-family: Comic Sans MS, sans-serif;
+        color: red;
+      }
+    </style>
+    <script src="./draaieth_files/moiscript.js"></script>
+    <script language="JavaScript">
+      //array voor energieen en coordinaten
+      data = new Array();
+      data[0] = "relatieve energie: 5.25  kJ   R.C. = 000 graden";
+      data[1] = "relatieve energie: 4.86  kJ   R.C. = 010 graden";
+      data[2] = "relatieve energie: 3.87  kJ   R.C. = 020 graden";
+      data[3] = "relatieve energie: 2.69  kJ   R.C. = 030 graden";
+      data[4] = "relatieve energie: 1.29  kJ   R.C. = 040 graden";
+      data[5] = "relatieve energie: 0.34  kJ   R.C. = 050 graden";
+      data[6] = "relatieve energie: 0.02  kJ   R.C. = 060 graden";
+      data[7] = "relatieve energie: 0.44  kJ   R.C. = 070 graden";
+      data[8] = "relatieve energie: 1.45  kJ   R.C. = 080 graden";
+      data[9] = "relatieve energie: 2.65  kJ   R.C. = 090 graden";
+      data[10] = "relatieve energie: 3.86  kJ   R.C. = 100 graden";
+      data[11] = "relatieve energie: 4.84  kJ   R.C. = 110 graden";
+      data[12] = "relatieve energie: 5.26  kJ   R.C. = 120 graden";
+      data[13] = "relatieve energie: 4.95  kJ   R.C. = 130 graden";
+      data[14] = "relatieve energie: 3.93  kJ   R.C. = 140 graden";
+      data[15] = "relatieve energie: 2.57  kJ   R.C. = 150 graden";
+      data[16] = "relatieve energie: 1.28  kJ   R.C. = 160 graden";
+      data[17] = "relatieve energie: 0.32  kJ   R.C. = 170 graden";
+      data[18] = "relatieve energie: 0.00  kJ   R.C. = 180 graden";
+      data[19] = "relatieve energie: 0.39  kJ   R.C. = 190 graden";
+      data[20] = "relatieve energie: 1.32  kJ   R.C. = 200 graden";
+      data[21] = "relatieve energie: 2.55  kJ   R.C. = 210 graden";
+      data[22] = "relatieve energie: 3.88  kJ   R.C. = 220 graden";
+      data[23] = "relatieve energie: 4.88  kJ   R.C. = 230 graden";
+      data[24] = "relatieve energie: 5.26  kJ   R.C. = 240 graden";
+      data[25] = "relatieve energie: 4.95  kJ   R.C. = 250 graden";
+      data[26] = "relatieve energie: 3.90  kJ   R.C. = 260 graden";
+      data[27] = "relatieve energie: 2.57  kJ   R.C. = 270 graden";
+      data[28] = "relatieve energie: 1.27  kJ   R.C. = 280 graden";
+      data[29] = "relatieve energie: 0.35  kJ   R.C. = 290 graden";
+      data[30] = "relatieve energie: 0.04  kJ   R.C. = 300 graden";
+      data[31] = "relatieve energie: 0.36  kJ   R.C. = 310 graden";
+      data[32] = "relatieve energie: 1.27  kJ   R.C. = 320 graden";
+      data[33] = "relatieve energie: 2.53  kJ   R.C. = 330 graden";
+      data[34] = "relatieve energie: 3.86  kJ   R.C. = 340 graden";
+      data[35] = "relatieve energie: 4.94  kJ   R.C. = 350 graden";
+      data[36] = "relatieve energie: 5.38  kJ   R.C. = 360 graden";
+      data[37] = "";
+      data[38] = "";
+
+      coordx = new Array();
+      coordx[0] = 31;
+      coordx[1] = 44;
+      coordx[2] = 77;
+      coordx[3] = 122;
+      coordx[4] = 166;
+      coordx[5] = 198;
+      coordx[6] = 210;
+      coordx[7] = 199;
+      coordx[8] = 166;
+      coordx[9] = 123;
+      coordx[10] = 78;
+      coordx[11] = 44;
+      coordx[12] = 31;
+      coordx[13] = 44;
+      coordx[14] = 78;
+      coordx[15] = 123;
+      coordx[16] = 166;
+      coordx[17] = 198;
+      coordx[18] = 210;
+      coordx[19] = 199;
+      coordx[20] = 167;
+      coordx[21] = 122;
+      coordx[22] = 78;
+      coordx[23] = 44;
+      coordx[24] = 31;
+      coordx[25] = 44;
+      coordx[26] = 77;
+      coordx[27] = 123;
+      coordx[28] = 167;
+      coordx[29] = 199;
+      coordx[30] = 209;
+      coordx[31] = 199;
+      coordx[32] = 167;
+      coordx[33] = 122;
+      coordx[34] = 77;
+      coordx[35] = 44;
+      coordx[36] = 30;
+
+      coordy = new Array();
+      coordy[0] = 72;
+      coordy[1] = 80;
+      coordy[2] = 88;
+      coordy[3] = 96;
+      coordy[4] = 104;
+      coordy[5] = 112;
+      coordy[6] = 121;
+      coordy[7] = 129;
+      coordy[8] = 137;
+      coordy[9] = 145;
+      coordy[10] = 153;
+      coordy[11] = 162;
+      coordy[12] = 170;
+      coordy[13] = 178;
+      coordy[14] = 186;
+      coordy[15] = 194;
+      coordy[16] = 203;
+      coordy[17] = 211;
+      coordy[18] = 219;
+      coordy[19] = 227;
+      coordy[20] = 235;
+      coordy[21] = 244;
+      coordy[22] = 252;
+      coordy[23] = 260;
+      coordy[24] = 268;
+      coordy[25] = 276;
+      coordy[26] = 285;
+      coordy[27] = 293;
+      coordy[28] = 301;
+      coordy[29] = 309;
+      coordy[30] = 317;
+      coordy[31] = 326;
+      coordy[32] = 334;
+      coordy[33] = 342;
+      coordy[34] = 350;
+      coordy[35] = 358;
+      coordy[36] = 367;
+
+      function initialize() {
+        initdivs();
+        divanchor("enplot");
+        divmove("ball", coordy[0] - 8, coordx[0] - 8);
+        init_chime();
+      }
+
+      function JSAnimcontrol(PlugName, FrameNo) {
+        divmove("ball", coordy[FrameNo] - 5, coordx[FrameNo] - 8);
+
+        //reset the value of the text area:
+
+        document.pleo.messageboard.value =
+          ">>>>" + data[FrameNo] + "<<<<" + (FrameNo + 1) + "\n";
+      }
+      function showframe(framenr) {
+        commandstring = "anim frame " + framenr;
+        input_script("snchime", commandstring);
+      }
+    </script>
+  </head>
+  <body onload="initialize()">
+    <h3>2. Conformaties en stereoisomeren</h3>
+    <p>
+      In het begin hebben we al gezien dat van langere alkanen (zie octaan in de
+      eerste tabel) verscheidene vormen mogelijk zijn, die in elkaar overgaan
+      door draaiing om de enkele C-C bindingen. Deze vormen noemen we
+      <i>conformaties</i>. We bekijken die draaibaarheid hieronder. <br />
+      Daarna bekijken we dubbele bindingen.
+    </p>
+
+    <h4>2a. Draaien in ethaan</h4>
+    <p>
+      Zoals je inmiddels al een paar keer gezien hebt, bestaat in ethaan een C-C
+      binding die vrij draaibaar is; de twee CH<sub>3</sub> groepen kunnen ten
+      opzichte van elkaar draaien. Hieronder staat een model van ethaan waarmee
+      die vrije draaibaarheid kan worden bekeken. Als je het model een kwartslag
+      draait, zodat je in het verlengde van de C-C-as kijkt, kun je de
+      verschijningsvormen van ethaan goed zien. Liggen de H-atomen boven elkaar,
+      en kun je er dus maar drie zien, dan spreken van de bedekkende vorm
+      (Engels: <i>eclipsed</i>).
+      <br />
+      Dit kun je zien in de 'frames' 13, 25 of 37. (Je kunt klikken op de punten
+      in de grafiek, in dit geval de toppen. De animatie-knoppen eronder
+      doorlopen het draaiingsproces.)
+    </p>
+    <p>
+      Liggen H-atomen aan het ene C-atoom precies tussen de H-atomen van het
+      andere C-atoom, zodat je ze alle zes kunt zien, dan spreken we van de
+      alternerende vorm (Engels: <i>staggered</i>). Dit kun je zien in de frames
+      7, 19 en 31, de minima in de grafiek.
+    </p>
+    <p>
+      Naast het model staat een grafiek waarin de potenti�le energie van het
+      molecuul is uitgezet tegen de draaihoek, in stappen van 10�. Het model kun
+      je weer ronddraaien, ook tijdens de animatie. Met de knoppen onder het
+      model kun je de animatie starten en stoppen of ��n frame voor- of
+      achteruit gaan. In het venstertje eronder kun je nog eens de energie,
+      draaihoek en framenummer zien.
+    </p>
+
+    <table border="0" width="95%" bgcolor="white">
+      <tbody>
+        <tr>
+          <td align="left">
+            <img
+              src="./modellen/ethane.gif"
+              name="enplot"
+              border="no"
+              usemap="#framesel"
+            />
+          </td>
+          <td align="center">
+            <script language="JavaScript">
+              define_chime(
+                window,
+                "snchime",
+                "240",
+                "300",
+                "AnimFrameCallback=JSAnimcontrol",
+                "modellen/ethaan.xyz",
+                "wireframe 40;spacefill 120;zoom 190;select *;set specular on;select hydrogen; spacefill 70; select *;background [xFFFFFF];set picking distance;anim fps 1;anim frame next;animation off"
+              );
+            </script>
+            <table
+              border="0"
+              cellspacing="0"
+              cellpadding="0"
+              height="240"
+              width="300"
+            >
+              <tbody>
+                <tr>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <map name="framesel">
+      <area shape="circle" coords="72,31,8" href="javascript:showframe(0)" />
+      <area shape="circle" coords="80,44,8" href="javascript:showframe(1)" />
+      <area shape="circle" coords="88,77,8" href="javascript:showframe(2)" />
+      <area shape="circle" coords="96,122,8" href="javascript:showframe(3)" />
+      <area shape="circle" coords="104,166,8" href="javascript:showframe(4)" />
+      <area shape="circle" coords="112,198,8" href="javascript:showframe(5)" />
+      <area shape="circle" coords="121,210,8" href="javascript:showframe(6)" />
+      <area shape="circle" coords="129,199,8" href="javascript:showframe(7)" />
+      <area shape="circle" coords="137,166,8" href="javascript:showframe(8)" />
+      <area shape="circle" coords="145,123,8" href="javascript:showframe(9)" />
+      <area shape="circle" coords="153,78,8" href="javascript:showframe(10)" />
+      <area shape="circle" coords="162,44,8" href="javascript:showframe(11)" />
+      <area shape="circle" coords="170,31,8" href="javascript:showframe(12)" />
+      <area shape="circle" coords="178,44,8" href="javascript:showframe(13)" />
+      <area shape="circle" coords="186,78,8" href="javascript:showframe(14)" />
+      <area shape="circle" coords="194,123,8" href="javascript:showframe(15)" />
+      <area shape="circle" coords="203,166,8" href="javascript:showframe(16)" />
+      <area shape="circle" coords="211,198,8" href="javascript:showframe(17)" />
+      <area shape="circle" coords="219,210,8" href="javascript:showframe(18)" />
+      <area shape="circle" coords="227,199,8" href="javascript:showframe(19)" />
+      <area shape="circle" coords="235,167,8" href="javascript:showframe(20)" />
+      <area shape="circle" coords="244,122,8" href="javascript:showframe(21)" />
+      <area shape="circle" coords="252,78,8" href="javascript:showframe(22)" />
+      <area shape="circle" coords="260,44,8" href="javascript:showframe(23)" />
+      <area shape="circle" coords="268,31,8" href="javascript:showframe(24)" />
+      <area shape="circle" coords="276,44,8" href="javascript:showframe(25)" />
+      <area shape="circle" coords="285,77,8" href="javascript:showframe(26)" />
+      <area shape="circle" coords="293,123,8" href="javascript:showframe(27)" />
+      <area shape="circle" coords="301,167,8" href="javascript:showframe(28)" />
+      <area shape="circle" coords="309,199,8" href="javascript:showframe(29)" />
+      <area shape="circle" coords="317,209,8" href="javascript:showframe(30)" />
+      <area shape="circle" coords="326,199,8" href="javascript:showframe(31)" />
+      <area shape="circle" coords="334,167,8" href="javascript:showframe(32)" />
+      <area shape="circle" coords="342,122,8" href="javascript:showframe(33)" />
+      <area shape="circle" coords="350,77,8" href="javascript:showframe(34)" />
+      <area shape="circle" coords="358,44,8" href="javascript:showframe(35)" />
+      <area shape="circle" coords="367,30,8" href="javascript:showframe(36)" />
+    </map>
+    <br />
+    <form name="display">
+      <table width="100%">
+        <tbody>
+          <tr>
+            <td align="center">
+              <input
+                type="button"
+                onclick="input_script(&#39;snchime&#39;,&#39;animation direction -1; anim frame next&#39;)"
+                value="stap terug"
+              />
+
+              <input
+                type="button"
+                onclick="input_script(&#39;snchime&#39;,&#39;animation direction 1; anim frame next&#39;)"
+                value="stap vooruit"
+              />
+            </td>
+            <td align="center">
+              Animatie
+              <input
+                type="button"
+                onclick="input_script(&#39;snchime&#39;,&#39;animation on&#39;)"
+                value="aan"
+              />
+              <input
+                type="button"
+                onclick="input_script(&#39;snchime&#39;,&#39;animation off&#39;)"
+                value="uit"
+              />
+            </td>
+            <td>
+              achtergrond
+              <input
+                type="button"
+                onclick="input_script(&#39;snchime&#39;,&#39;background [15,130,15]&#39;)"
+                value="donker"
+              />
+              <input
+                type="button"
+                onclick="input_script(&#39;snchime&#39;,&#39;background [153,255,153]&#39;)"
+                value="licht"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form name="pleo">
+        <textarea name="messageboard" rows="1" cols="60">
+&gt;&gt;&gt;&gt;relatieve energie: 5.25 kJ  R.C. = 000 graden&lt;&lt;&lt;&lt;1 
+</textarea
+        >
+      </form>
+    </form>
+
+    <h4>Conclusie:</h4>
+    <p>
+      De energie blijkt hoger in de bedekkende vorm, vanwege de afstoting tussen
+      electronen in de C-H bindingen. Het molecuul heeft een voorkeur voor de
+      alternerende vorm of <i>conformatie</i>.<br />
+      De mogelijke conformaties gaan in het algemeen gemakkelijk in elkaar over,
+      door draaiing over een hoek van 120�.
+      <br />
+      Vervangen we op beide C's een H door een grotere groep, dan zullen de drie
+      minima niet meer gelijk zijn, maar de conformaties blijven in elkaar
+      overgaan. Als extraatje kun je
+      <a href="diclrot.html"
+        >dichloorethaan</a
+      >
+      bekijken.
+      <br />
+      Hoe zit dat bij de
+      <a href="ezetheen.html"
+        >alkenen</a
+      >?
+    </p>
+    <hr size="2" width="100%" align="Center" />
+    <br />
+    <center>
+      <table width="50%" border="0" cellspacing="2" cellpadding="2">
+        <tbody>
+          <tr valign="TOP">
+            <td align="RIGHT">
+              <a
+                href="ethyn.html"
+                onmouseover="window.status=&#39;Vorige&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img
+                  src="./draaieth_files/knop_links.jpg"
+                  align="Absmiddle"
+                  border="0"
+              /></a>
+            </td>
+
+            <td align="RIGHT">
+              <a
+                href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/index.html"
+                onmouseover="window.status=&#39;index&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img
+                  src="./draaieth_files/info.gif"
+                  align="Absmiddle"
+                  border="0"
+              /></a>
+            </td>
+            <td>
+              <a
+                href="ezetheen.html"
+                onmouseover="window.status=&#39;Volgende&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img
+                  src="./draaieth_files/knop_rechts.jpg"
+                  align="Absmiddle"
+                  border="0"
+              /></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+
+    <div id="ball" style="left: 76px; top: 732px">
+      <img src="./knoppen/redball.gif" />
+    </div>
+  </body>
+</html>

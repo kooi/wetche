@@ -1,120 +1,358 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title>ethyn</title>
 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>ethyn</title>
+    <style type="text/css">
+      BODY {
+        font-family: Comic Sans MS, sans-serif;
+        background: white;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      P {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      TD {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      UL {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      OL {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      H2 {
+        font-family: Comic Sans MS, sans-serif;
+        color: orange;
+      }
+      H3 {
+        font-family: Comic Sans MS, sans-serif;
+        color: blue;
+      }
+      H4 {
+        font-family: Comic Sans MS, sans-serif;
+        color: blue;
+      }
+      H5 {
+        font-family: Comic Sans MS, sans-serif;
+        color: red;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/themes/default/kekule.css"
+    />
+    <script src="./js/three.min.js"></script>
+    <script src="./js/raphael.min.js"></script>
+    <script src="./js/kekule/kekule.min.js"></script>
+  </head>
+  <body>
+    <a name="TOP"> </a>
 
-<style type="text/css">
-BODY  {font-family: Comic Sans MS, sans-serif;background:white;margin-left:10px;margin-right:10px}
-P {font-family: Comic Sans MS, sans-serif}
-TD {font-family: Comic Sans MS, sans-serif}
-UL {font-family: Comic Sans MS, sans-serif}
-OL {font-family: Comic Sans MS, sans-serif}
-H2 {font-family: Comic Sans MS, sans-serif;color:orange}
-H3 {font-family: Comic Sans MS, sans-serif;color:blue}
-H4 {font-family: Comic Sans MS, sans-serif;color:blue}
-H5 {font-family: Comic Sans MS, sans-serif;color:red}
-</style>
-
-</head>
-<body>
-<a name="TOP"> </a> 
-
-<h4>1d. Ethyn, lineaire structuur</h4>
-<table width="95%">
-<tbody><tr><td><p>
-Naast de net besproken dubbele bindingen bestaan er ook nog drievoudige bindingen. Deze bindingen kunnen -net als de dubbele- tussen verschillende atoomsoorten voorkomen, maar voor ons zijn vooral de koolstof-skeletten van belang, daarom beschouwen we vooral de drievoudige C-C binding. <br>
-</p>
-</td><td bgcolor="#AADDFF">
-<embed src="modellen/ethyn.mol" frank="no" name="tertaeder1" nomenus="true" display3d="ball&amp;stick" script="zoom 250%" width="270" height="150" bgcolor="#AADDFF">
-</td></tr>
-<tr>
-<td><p>
-Ook hier ligt ��n (sigma-)binding (grijs) op de C-C-as, de twee andere liggen
-buiten de as. Niet in ��n vlak, zoals het eerste model suggereert,
-maar eerder in twee vlakken loodrecht op elkaar. Ter onderscheid zijn ze hier rood en blauw gekleurd.
-Het zijn allebei pi-bindingen.</p>
-</td><td bgcolor="#AADDFF">
-<embed src="modellen/xethyn.mol" frank="no" name="xethyn" nomenus="true" display3d="ball&amp;stick" script="zoom 250%;rotate y 90;rotate x 100; select atomno=7,atomno=8,atomno=5,atomno=6; color atoms blue; spacefill 20;
+    <h4>1d. Ethyn, lineaire structuur</h4>
+    <table width="95%">
+      <tbody>
+        <tr>
+          <td>
+            <p>
+              Naast de net besproken dubbele bindingen bestaan er ook nog
+              drievoudige bindingen. Deze bindingen kunnen -net als de dubbele-
+              tussen verschillende atoomsoorten voorkomen, maar voor ons zijn
+              vooral de koolstof-skeletten van belang, daarom beschouwen we
+              vooral de drievoudige C-C binding. <br />
+            </p>
+          </td>
+          <td bgcolor="#AADDFF">
+            <span
+              style="display: block; width: 270px; height: 150px"
+              data-widget="Kekule.ChemWidget.Viewer3D"
+              data-chem-obj="url(./modellen/ethyn.mol)"
+              data-predefined-setting="basic"
+              data-caption="ethyn"
+            ></span>
+            <!-- <embed
+              src="modellen/ethyn.mol"
+              frank="no"
+              name="tertaeder1"
+              nomenus="true"
+              display3d="ball&amp;stick"
+              script="zoom 250%"
+              width="270"
+              height="150"
+              bgcolor="#AADDFF"
+            /> -->
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              Ook hier ligt &eacute;&eacute;n (sigma-)binding (grijs) op de
+              C-C-as, de twee andere liggen buiten de as. Niet in
+              &eacute;&eacute;n vlak, zoals het eerste model suggereert, maar
+              eerder in twee vlakken loodrecht op elkaar. Ter onderscheid zijn
+              ze hier rood en blauw gekleurd. Het zijn allebei pi-bindingen.
+            </p>
+          </td>
+          <td bgcolor="#AADDFF">
+            <span
+              style="display: block; width: 270px; height: 150px"
+              data-widget="Kekule.ChemWidget.Viewer3D"
+              data-chem-obj="url(./modellen/xethyn.mol)"
+              data-predefined-setting="basic"
+              data-caption="xethyn"
+            ></span>
+            <!-- <embed
+              src="modellen/xethyn.mol"
+              frank="no"
+              name="xethyn"
+              nomenus="true"
+              display3d="ball&amp;stick"
+              script="zoom 250%;rotate y 90;rotate x 100; select atomno=7,atomno=8,atomno=5,atomno=6; color atoms blue; spacefill 20;
 wireframe 80;
 select atomno=9,atomno=10,atomno=11,atomno=12; color atoms red;
-spacefill 20; wireframe 80" width="270" height="150" bgcolor="#AADDFF">
-</td></tr>
-<tr><td><p>
-De twee bindingsparen 
-worden ook vaak samen voorgesteld als een soort mantel om de C-C-as.
-</p><p> Het molecuul is lineair, zodat de draaibaarheid om de binding niet
-iets is wat we kunnen waarnemen.<br>
-</p><p>De hoeken tussen de sigma-bindingen zijn in dit geval 180�.
-</p></td><td>
-<img src="./ethyn_files/ethyn_wolk.jpg">
-</td></tr>
-</tbody></table>
+spacefill 20; wireframe 80"
+              width="270"
+              height="150"
+              bgcolor="#AADDFF"
+            /> -->
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              De twee bindingsparen worden ook vaak samen voorgesteld als een
+              soort mantel om de C-C-as.
+            </p>
+            <p>
+              Het molecuul is lineair, zodat de draaibaarheid om de binding niet
+              iets is wat we kunnen waarnemen.<br />
+            </p>
+            <p>
+              De hoeken tussen de sigma-bindingen zijn in dit geval 180&deg;.
+            </p>
+          </td>
+          <td>
+            <img src="./modellen/ethyn_wolk.jpg" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-<h4>Varianten</h4>
-<p>
-Ook in dit geval zijn er natuurlijk veel varianten mogelijk van molekulen met drievoudige bindingen. Uit het feit dat een C-atoom vier atoombindingen kan maken, volgt dat er nooit twee drievoudige bindingen naast elkaar kunnen zitten. Maar als tussen meerdere drievoudige bindingen eerst een enkelvoudige binding zit, is het mogelijk om veel verschillende alkynen te maken. Naar analogie van het eerste model weet je dat een C-atoom met een drievoudige binding zijn vierde binding in een rechte lijn heeft. Als je aan die laatste binding een andere 
-groep koppelt (alkaan of alkeen) kunnen weer combinaties ontstaan van drievoudige (lineaire) bindingen en dubbele (vlakke structuur) of enkelvoudige (tetraeder). Hieronder staat nog een voorbeeld van een dialkyn en ander, groter alkyn. Helemaal onderaan staat een model van een molecuul waarin alle drie de bindingsvormen voorkomen. <br>
-Probeer een naam voor deze stof te verzinnen.</p>
+    <h4>Varianten</h4>
+    <p>
+      Ook in dit geval zijn er natuurlijk veel varianten mogelijk van molekulen
+      met drievoudige bindingen. Uit het feit dat een C-atoom vier
+      atoombindingen kan maken, volgt dat er nooit twee drievoudige bindingen
+      naast elkaar kunnen zitten. Maar als tussen meerdere drievoudige bindingen
+      eerst een enkelvoudige binding zit, is het mogelijk om veel verschillende
+      alkynen te maken. Naar analogie van het eerste model weet je dat een
+      C-atoom met een drievoudige binding zijn vierde binding in een rechte lijn
+      heeft. Als je aan die laatste binding een andere groep koppelt (alkaan of
+      alkeen) kunnen weer combinaties ontstaan van drievoudige (lineaire)
+      bindingen en dubbele (vlakke structuur) of enkelvoudige (tetraeder).
+      Hieronder staat nog een voorbeeld van een dialkyn en ander, groter alkyn.
+      Helemaal onderaan staat een model van een molecuul waarin alle drie de
+      bindingsvormen voorkomen. <br />
+      Probeer een naam voor deze stof te verzinnen.
+    </p>
 
-<center>
-<embed src="modellen/2-butyn.mol" frank="no" name="tertaeder1" nomenus="true" display3d="ball&amp;stick" script="zoom 300%" width="320" height="150" bgcolor="#AADDFF"><br>
-<h5>2-Butyn</h5> 
-<hr size="2" width="100%" align="Center">
+    <center>
+      <span
+        style="display: block; width: 320px; height: 150px"
+        data-widget="Kekule.ChemWidget.Viewer3D"
+        data-chem-obj="url(./modellen/2-butyn.mol)"
+        data-predefined-setting="basic"
+        data-caption="2-butyn"
+      ></span>
+      <!-- <embed
+        src="modellen/2-butyn.mol"
+        frank="no"
+        name="tertaeder1"
+        nomenus="true"
+        display3d="ball&amp;stick"
+        script="zoom 300%"
+        width="320"
+        height="150"
+        bgcolor="#AADDFF"
+	  /> -->
+      <br />
+      <h5>2-Butyn</h5>
+      <hr size="2" width="100%" align="Center" />
 
-<embed src="modellen/dibutyn.mol" frank="no" name="tertaeder1" nomenus="true" display3d="ball&amp;stick" script="zoom 300%" width="320" height="150" bgcolor="#AADDFF">
+      <span
+        style="display: block; width: 320px; height: 150px"
+        data-widget="Kekule.ChemWidget.Viewer3D"
+        data-chem-obj="url(./modellen/dibutyn.mol)"
+        data-predefined-setting="basic"
+        data-caption="dibutyn"
+      ></span>
+      <!-- <embed
+        src="modellen/dibutyn.mol"
+        frank="no"
+        name="tertaeder1"
+        nomenus="true"
+        display3d="ball&amp;stick"
+        script="zoom 300%"
+        width="320"
+        height="150"
+        bgcolor="#AADDFF"
+      /> -->
 
-<h5>Butadiyn</h5> 
-<p>Je ziet hier een ander alkyn (eigenlijk alkadiyn); bedenk dat ze oneindig lang kunnen zijn! Probeer in het model te zien dat alle atomen op een lijn liggen.</p>
-</center>
-<hr size="2" width="100%" align="Center">
-<table>
-<tbody><tr><td bgcolor="#AADDFF">
-<embed src="modellen/allinone.mol" frank="no" name="allinone" nomenus="true" display3d="ball&amp;stick" script="zoom 300%" width="320" height="150" bgcolor="#AADDFF">
-</td><td bgcolor="white">
-<h4>Alles in een</h4> 
-<p>
-<img src="./ethyn_files/question.gif" align="left">
-In dit ietwat gekunstelde model komen alledrie de bindingsvormen voor, in de ongedraaide versie van rechts naar links de 1-, 2-, en 3-voudige. Probeer ze alledrie op te sporen door met het molecuul te draaien. Raak je de tel kwijt, klik dan op de knop 
-<embed type="application/x-spt" width="16" height="16" button="push" target="allinone" script="reset; zoom 300%"> om het molecuul terug te zetten in originele stand.
-<br>
-<img src="./ethyn_files/question.gif" align="left">
-Bekijk de ruimtelijke structuur ook eens nauwkeurig: zie
-je iets wat niet helemaal klopt, gezien de voorgaande pagina's?
-</p>
-</td></tr></tbody></table>
-<hr>
+      <h5>Butadiyn</h5>
+      <p>
+        Je ziet hier een ander alkyn (eigenlijk alkadiyn); bedenk dat ze
+        oneindig lang kunnen zijn! Probeer in het model te zien dat alle atomen
+        op een lijn liggen.
+      </p>
+    </center>
+    <hr size="2" width="100%" align="Center" />
+    <table>
+      <tbody>
+        <tr>
+          <td bgcolor="#AADDFF">
+            <span
+              style="display: block; width: 320px; height: 150px"
+              data-widget="Kekule.ChemWidget.Viewer3D"
+              data-chem-obj="url(./modellen/allinone.mol)"
+              data-predefined-setting="basic"
+              data-caption="allinone"
+            ></span>
+            <!-- <embed
+              src="modellen/allinone.mol"
+              frank="no"
+              name="allinone"
+              nomenus="true"
+              display3d="ball&amp;stick"
+              script="zoom 300%"
+              width="320"
+              height="150"
+              bgcolor="#AADDFF"
+            /> -->
+          </td>
+          <td bgcolor="white">
+            <h4>Alles in een</h4>
+            <p>
+              <img src="./question.gif" align="left" />
+              In dit ietwat gekunstelde model komen alledrie de bindingsvormen
+              voor, in de ongedraaide versie van rechts naar links de 1-, 2-, en
+              3-voudige. Probeer ze alledrie op te sporen door met het molecuul
+              te draaien. Raak je de tel kwijt, klik dan op de knop
+              <!-- TODO -->
+              <!-- <embed
+                type="application/x-spt"
+                width="16"
+                height="16"
+                button="push"
+                target="allinone"
+                script="reset; zoom 300%"
+              /> -->
+              om het molecuul terug te zetten in originele stand.
+              <br />
+              <img src="./question.gif" align="left" />
+              Bekijk de ruimtelijke structuur ook eens nauwkeurig: zie je iets
+              wat niet helemaal klopt, gezien de voorgaande pagina's?
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
 
-<h4>Samenvattend: </h4>
-<p>We zijn
-</p><ul>
-<li> tetraeders tegengekomen, met hoeken van 109�,
-</li><li>trigonale atomen, met bindingshoeken van 120�,
-</li><li>en lineaire fragmenten met bindingshoeken van 180�.
-</li></ul><p></p><p>
-Bovendien hebben we gezien dat om dubbele bindingen niet gedraaid kan worden.<br>
-We zien later wat voor gevolgen dat heeft, maar 
-we gaan nu eerst verder met de draaiing om <b>enkele</b> bindingen, te beginnen de 
-<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/draaieth.html">C-C binding in ethaan</a>.
+    <h4>Samenvattend:</h4>
+    <p>We zijn</p>
+    <ul>
+      <li>tetraeders tegengekomen, met hoeken van 109&deg;,</li>
+      <li>trigonale atomen, met bindingshoeken van 120&deg;,</li>
+      <li>en lineaire fragmenten met bindingshoeken van 180&deg;.</li>
+    </ul>
+    <p></p>
+    <p>
+      Bovendien hebben we gezien dat om dubbele bindingen niet gedraaid kan
+      worden.<br />
+      We zien later wat voor gevolgen dat heeft, maar we gaan nu eerst verder
+      met de draaiing om <b>enkele</b> bindingen, te beginnen de
+      <a href="draaieth.html">C-C binding in ethaan</a>.
+    </p>
+    <hr size="2" width="100%" align="Center" />
+    <br />
+    <center>
+      <table width="50%" border="0" cellspacing="2" cellpadding="2">
+        <tr valign="TOP">
+          <td align="RIGHT">
+            <a
+              href="etheen.html"
+              onMouseOver="window.status='Vorige'; return true;"
+              onMouseOut="window.status=' '; "
+            >
+              <img src="knoppen/knop_links.jpg" align="Absmiddle" border="0"
+            /></a>
+          </td>
 
-</p>
-<hr size="2" width="100%" align="Center">
-<br>
-<center>
-<table width="50%" border="0" cellspacing="2" cellpadding="2">
-<tbody><tr valign="TOP">
-	<td align="RIGHT">	<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/etheen.html" onmouseover="window.status=&#39;Vorige&#39;; return true;" onmouseout="window.status=&#39; &#39;; "> 
-				<img src="./ethyn_files/knop_links.jpg" align="Absmiddle" border="0"></a></td>
+          <td align="RIGHT">
+            <a
+              href="index.html"
+              onMouseOver="window.status='index'; return true;"
+              onMouseOut="window.status=' '; "
+            >
+              <img src="knoppen/info.gif" align="Absmiddle" border="0"
+            /></a>
+          </td>
+          <td>
+            <a
+              href="draaieth.html"
+              onMouseOver="window.status='Volgende'; return true;"
+              onMouseOut="window.status=' '; "
+            >
+              <img src="knoppen/knop_rechts.jpg" align="Absmiddle" border="0"
+            /></a>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <!-- <center>
+      <table width="50%" border="0" cellspacing="2" cellpadding="2">
+        <tbody>
+          <tr valign="TOP">
+            <td align="RIGHT">
+              <a
+                href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/etheen.html"
+                onmouseover="window.status=&#39;Vorige&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img
+                  src="./ethyn_files/knop_links.jpg"
+                  align="Absmiddle"
+                  border="0"
+              /></a>
+            </td>
 
-<td align="RIGHT">	<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/index.html" onmouseover="window.status=&#39;index&#39;; return true;" onmouseout="window.status=&#39; &#39;; "> 
-				<img src="./ethyn_files/info.gif" align="Absmiddle" border="0"></a></td>
-	<td>			<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/draaieth.html" onmouseover="window.status=&#39;Volgende&#39;; return true;" onmouseout="window.status=&#39; &#39;; "> 
-				<img src="./ethyn_files/knop_rechts.jpg" align="Absmiddle" border="0"></a></td>
-</tr></tbody></table></center>
-<br><br><br>
-
-
- 
-
-
-</body><style id="stylish-2" class="stylish" type="text/css">.form-control {
-    width: 100% !important;
-}</style></html>
+            <td align="RIGHT">
+              <a
+                href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/index.html"
+                onmouseover="window.status=&#39;index&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img src="./ethyn_files/info.gif" align="Absmiddle" border="0"
+              /></a>
+            </td>
+            <td>
+              <a
+                href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/draaieth.html"
+                onmouseover="window.status=&#39;Volgende&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img
+                  src="./ethyn_files/knop_rechts.jpg"
+                  align="Absmiddle"
+                  border="0"
+              /></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center> -->
+    <br /><br /><br />
+  </body>
+</html>

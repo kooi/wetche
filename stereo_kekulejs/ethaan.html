@@ -1,133 +1,389 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title>Ethaan</title>
 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>Ethaan</title>
-
-<style type="text/css">
-BODY  {font-family: Comic Sans MS, sans-serif;background:white;margin-left:10px;margin-right:10px}
-P {font-family: Comic Sans MS, sans-serif}
-TD {font-family: Comic Sans MS, sans-serif}
-UL {font-family: Comic Sans MS, sans-serif}
-OL {font-family: Comic Sans MS, sans-serif}
-H2 {font-family: Comic Sans MS, sans-serif;color:blue}
-H3 {font-family: Comic Sans MS, sans-serif;color:blue}
-H4 {font-family: Comic Sans MS, sans-serif;color:blue}
-H5 {font-family: Comic Sans MS, sans-serif;color:red}
-</style>
-
-
-</head>
-<body>
-
-
-<table width="95%" border="0" cellspacing="2" cellpadding="2">
-<tbody><tr valign="TOP">
-<td>
-<h4>1b. Ethaan</h4>
-Hiernaast staat het ethaan(C<sub>2</sub>H<sub>6</sub>) molecuul. 
-Beide C atomen hebben een tetraeder-omringing, met drie H's en de andere C
-op de hoekpunten. Probeer je deze twee tetraeders voor te stellen, en maak ze
-vervolgens zichtbaar door op onderstaande 'aan/uit' knop te klikken.
-<br>
-<embed type="application/x-spt" width="16" height="16" button="toggle" target="ethaan" script="select atomno=2,atomno=6,atomno=4,atomno=5;set bondmode and;wireframe 10;
+    <style type="text/css">
+      BODY {
+        font-family: Comic Sans MS, sans-serif;
+        background: white;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      P {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      TD {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      UL {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      OL {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      H2 {
+        font-family: Comic Sans MS, sans-serif;
+        color: blue;
+      }
+      H3 {
+        font-family: Comic Sans MS, sans-serif;
+        color: blue;
+      }
+      H4 {
+        font-family: Comic Sans MS, sans-serif;
+        color: blue;
+      }
+      H5 {
+        font-family: Comic Sans MS, sans-serif;
+        color: red;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/themes/default/kekule.css"
+    />
+    <script src="./js/three.min.js"></script>
+    <script src="./js/raphael.min.js"></script>
+    <script src="./js/kekule/kekule.min.js"></script>
+  </head>
+  <body>
+    <table width="95%" border="0" cellspacing="2" cellpadding="2">
+      <tbody>
+        <tr valign="TOP">
+          <td>
+            <h4>1b. Ethaan</h4>
+            Hiernaast staat het ethaan(C<sub>2</sub>H<sub>6</sub>) molecuul.
+            Beide C atomen hebben een tetraeder-omringing, met drie H's en de
+            andere C op de hoekpunten. Probeer je deze twee tetraeders voor te
+            stellen, en maak ze vervolgens zichtbaar door op onderstaande
+            'aan/uit' knop te klikken.
+            <br />
+            <!-- TODO -->
+            <!-- <embed
+              type="application/x-spt"
+              width="16"
+              height="16"
+              button="toggle"
+              target="ethaan"
+              script="select atomno=2,atomno=6,atomno=4,atomno=5;set bondmode and;wireframe 10;
 color bonds red;
 select atomno=1,atomno=3,atomno=7,atomno=8;set bondmode and;wireframe 10;
-color bonds blue" altscript="select atomno=2,atomno=6,atomno=4,atomno=5;set bondmode and;wireframe 1;
+color bonds blue"
+              altscript="select atomno=2,atomno=6,atomno=4,atomno=5;set bondmode and;wireframe 1;
 color bonds [170,220,255];
 select atomno=1,atomno=3,atomno=7,atomno=8;set bondmode and;wireframe 1;
-color bonds [170,220,255]"> <font color="#FF00FF">Kleur de tetraeders</font>
-<br>
-De vierhoekpunten zijn nu niet meer equivalent; de C-C binding is langer dan
-de C-H binding, dus de tetraeder is uitgerekt in ��n richting.
-<br>
-Let ook op de positie van de H-atomen. Als je langs de C-C-binding 
-<embed type="application/x-spt" width="16" height="16" button="push" target="ethaan" script="reset; zoom 190;rotate Y 90">
+color bonds [170,220,255]"
+            />
+            <font color="#FF00FF">Kleur de tetraeders</font> -->
+            <br />
+            De vierhoekpunten zijn nu niet meer equivalent; de C-C binding is
+            langer dan de C-H binding, dus de tetraeder is uitgerekt in
+            &eacute;&eacute;n richting.
+            <br />
+            Let ook op de positie van de H-atomen. Als je langs de C-C-binding
+            <!-- TODO -->
+            <!-- <embed
+              type="application/x-spt"
+              width="16"
+              height="16"
+              button="push"
+              target="ethaan"
+              script="reset; zoom 190;rotate Y 90"
+            /> -->
 
-kijkt zie je
-dat ze 'om-en-om', of alternerend, liggen. Zo is hun onderlinge afstand het grootst, wat het gunstigst blijkt te zijn. Zie ook 'ethaan draaien'.
-</td>
-<td bgcolor="#AADDFF">
-
-<embed src="modellen/sethaan.mol" frank="no" name="ethaan" nomenus="true" script="zoom 190;select *;wireframe 40;spacefill 80;
+            kijkt zie je dat ze 'om-en-om', of alternerend, liggen. Zo is hun
+            onderlinge afstand het grootst, wat het gunstigst blijkt te zijn.
+            Zie ook 'ethaan draaien'.
+          </td>
+          <td bgcolor="#AADDFF">
+            <span
+              style="display: block; width: 250px; height: 250px"
+              data-widget="Kekule.ChemWidget.Viewer3D"
+              data-chem-obj="url(./modellen/sethaan.mol)"
+              data-predefined-setting="basic"
+              data-caption="sethaan"
+            ></span>
+            <!-- <embed
+              src="modellen/sethaan.mol"
+              frank="no"
+              name="ethaan"
+              nomenus="true"
+              script="zoom 190;select *;wireframe 40;spacefill 80;
 select atomno=2,atomno=6,atomno=4,atomno=5;set bondmode and;wireframe 1;color bonds [170,220,255];
 select atomno=1,atomno=3,atomno=7,atomno=8;set bondmode and;wireframe 1;
-color bonds [170,220,255];select *" width="250" height="250" bgcolor="#AADDFF">
+color bonds [170,220,255];select *"
+              width="250"
+              height="250"
+              bgcolor="#AADDFF"
+            /> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
-</td>
-</tr></tbody></table>
+    <h4>Hogere alkanen</h4>
+    <p>
+      Er zijn uiteraard veel meer alkanen. De moleculen moeten voldoen aan de
+      eis dat alle bindingen tussen de koolstofatomen enkelvoudig zijn. Door
+      uitgaande van methaan steeds een waterstof te vervangen door een CH<sub
+        >3</sub
+      >
+      groep kunnen we oneindig veel alkanen genereren. Hieronder staan de
+      kleinste 'onvertakte' van de reeks.
+    </p>
 
-<h4>Hogere alkanen</h4>
-<p>
-Er zijn uiteraard veel meer alkanen. 
-De moleculen moeten voldoen aan de eis dat alle bindingen tussen de koolstofatomen enkelvoudig zijn. Door uitgaande van methaan steeds een waterstof te vervangen door een CH<sub>3</sub> groep kunnen we oneindig veel alkanen
-genereren. Hieronder staan de kleinste 'onvertakte' van de reeks. </p>
+    <table border="1" width="90%" cellspacing="2" cellpadding="2">
+      <tbody>
+        <tr>
+          <td><font color="#0000FF" size="+1">Alkanen</font></td>
+          <td><font color="#0000FF" size="+1">Molecuul-formule</font></td>
+          <td><font color="#0000FF" size="+1">Ruimtelijke structuur</font></td>
+        </tr>
+        <tr>
+          <td>Naam</td>
+          <td>C<sub>n</sub>H<sub>2n+2</sub></td>
+          <!-- TODO -->
+          <td>Klik op button voor structuur</td>
+        </tr>
+        <tr>
+          <td>methaan</td>
+          <td>
+            CH<sub>4</sub>
+            <!-- TODO -->
+            <!-- <embed
+              type="application/x-spt"
+              width="16"
+              height="16"
+              button="push"
+              target="alkaan"
+              script="zap;load modellen/n-methaan.mol;zoom 300%;wireframe 20; spacefill 80;rotate x 60;rotate y 30"
+            /> -->
+          </td>
+          <td rowspan="8" bgcolor="#AADDFF">
+            <span
+              style="display: block; width: 400px; height: 400px"
+              data-widget="Kekule.ChemWidget.Viewer3D"
+              data-chem-obj="url(./modellen/n-methaan.mol)"
+              data-predefined-setting="basic"
+              data-caption="n-methaan"
+            ></span>
+            <!-- <embed
+              src="modellen/n-methaan.mol"
+              frank="no"
+              name="alkaan"
+              width="400"
+              height="400"
+              script="zoom 200%;wireframe 20; spacefill 80;rotate x 60"
+              bgcolor="#AADDFF" -->
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>ethaan</td>
+          <td>
+            C<sub>2</sub>H<sub>6</sub>
+            <!-- TODO -->
+            <!-- <embed
+              type="application/x-spt"
+              width="16"
+              height="16"
+              button="push"
+              target="alkaan"
+              script="zap;load modellen/sethaan.xyz;zoom 200%;wireframe 20; spacefill 80;rotate x 30"
+            /> -->
+          </td>
+        </tr>
+        <tr>
+          <td>propaan</td>
+          <td>
+            C<sub>3</sub>H<sub>8</sub>
+            <!-- TODO -->
+            <!-- <embed
+              type="application/x-spt"
+              width="16"
+              height="16"
+              button="push"
+              target="alkaan"
+              script="zap;load modellen/propaan.xyz;zoom 200%;wireframe 20; spacefill 80;rotate x 30"
+            /> -->
+          </td>
+        </tr>
+        <tr>
+          <td>butaan</td>
+          <td>
+            C<sub>4</sub>H<sub>10</sub>
+            <!-- TODO -->
+            <!-- <embed
+              type="application/x-spt"
+              width="16"
+              height="16"
+              button="push"
+              target="alkaan"
+              script="zap;load modellen/butaan.xyz;zoom 200%;wireframe 20; spacefill 80;rotate x 30"
+            /> -->
+          </td>
+        </tr>
+        <tr>
+          <td>pentaan</td>
+          <td>
+            C<sub>5</sub>H<sub>12</sub>
+            <!-- TODO -->
+            <!-- <embed
+              type="application/x-spt"
+              width="16"
+              height="16"
+              button="push"
+              target="alkaan"
+              script="zap;load modellen/pentaan.xyz;zoom 200%;wireframe 20; spacefill 80;rotate x 30"
+            /> -->
+          </td>
+        </tr>
+        <tr>
+          <td>hexaan</td>
+          <td>
+            C<sub>6</sub>H<sub>14</sub>
+            <!-- TODO -->
+            <!-- <embed
+              type="application/x-spt"
+              width="16"
+              height="16"
+              button="push"
+              target="alkaan"
+              script="zap;load modellen/hexaan.xyz;zoom 190%;wireframe 20; spacefill 80;rotate x 30"
+            /> -->
+          </td>
+        </tr>
+        <tr>
+          <td>heptaan</td>
+          <td>
+            C<sub>7</sub>H<sub>16</sub>
+            <!-- TODO -->
+            <!-- <embed
+              type="application/x-spt"
+              width="16"
+              height="16"
+              button="push"
+              target="alkaan"
+              script="zap;load modellen/heptaan.xyz;zoom 180%;wireframe 20; spacefill 80;rotate x 30"
+            /> -->
+          </td>
+        </tr>
+        <tr>
+          <td>octaan</td>
+          <td>
+            C<sub>8</sub>H<sub>18</sub>
+            <!-- TODO -->
+            <!-- <embed
+              type="application/x-spt"
+              width="16"
+              height="16"
+              button="push"
+              target="alkaan"
+              script="zap;load modellen/octaan1.xyz;zoom 170%;wireframe 20; spacefill 80;rotate x 30"
+            /> -->
+            <!-- TODO -->
+            <!-- <embed
+              type="application/x-spt"
+              width="16"
+              height="16"
+              button="push"
+              target="alkaan"
+              script="zap;load modellen/octaan2.xyz;zoom 170%;wireframe 20; spacefill 80;rotate x 30"
+			/> -->
+            <br />
+            (twee van de vele mogelijke <i>conformaties</i> van dezelfde
+            structuur)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      De vertakte alkanen laten we voor wat ze zijn. Het volgende hoofdstuk gaat
+      over
+      <a href="etheen.html">alkenen</a>.
+    </p>
 
-	<table border="1" width="90%" cellspacing="2" cellpadding="2">
-	<tbody><tr>	<td><font color="#0000FF" size="+1">Alkanen</font></td>
-		<td><font color="#0000FF" size="+1">Molecuul-formule</font></td>
-<td><font color="#0000FF" size="+1">Ruimtelijke structuur</font></td></tr>
-	<tr>	<td>Naam</td>
-    		<td>C<sub>n</sub>H<sub>2n+2</sub></td>
-<td>Klik op button voor structuur</td>	</tr>
-  	<tr>	<td>methaan</td>
-    		<td>CH<sub>4</sub>
- <embed type="application/x-spt" width="16" height="16" button="push" target="alkaan" script="zap;load modellen/n-methaan.mol;zoom 300%;wireframe 20; spacefill 80;rotate x 60;rotate y 30">
-</td>	
-<td rowspan="8" bgcolor="#AADDFF"><embed src="modellen/n-methaan.mol" frank="no" name="alkaan" width="400" height="400" script="zoom 200%;wireframe 20; spacefill 80;rotate x 60" bgcolor="#AADDFF">
-</td></tr>
-  	<tr>	<td>ethaan</td>
-    		<td>C<sub>2</sub>H<sub>6</sub>
-<embed type="application/x-spt" width="16" height="16" button="push" target="alkaan" script="zap;load modellen/sethaan.xyz;zoom 200%;wireframe 20; spacefill 80;rotate x 30">
-</td>		</tr>
-  	<tr>	<td>propaan</td>
-    		<td>C<sub>3</sub>H<sub>8</sub>
-<embed type="application/x-spt" width="16" height="16" button="push" target="alkaan" script="zap;load modellen/propaan.xyz;zoom 200%;wireframe 20; spacefill 80;rotate x 30">
-</td>		</tr>
-  	<tr>	<td>butaan</td>
-    		<td>C<sub>4</sub>H<sub>10</sub>
-<embed type="application/x-spt" width="16" height="16" button="push" target="alkaan" script="zap;load modellen/butaan.xyz;zoom 200%;wireframe 20; spacefill 80;rotate x 30">
-</td>		</tr>
-	<tr>	<td>pentaan</td>
-    		<td>C<sub>5</sub>H<sub>12</sub>
-<embed type="application/x-spt" width="16" height="16" button="push" target="alkaan" script="zap;load modellen/pentaan.xyz;zoom 200%;wireframe 20; spacefill 80;rotate x 30">
-</td>		</tr>
-  	<tr>	<td>hexaan</td>
-    		<td>C<sub>6</sub>H<sub>14</sub>
-<embed type="application/x-spt" width="16" height="16" button="push" target="alkaan" script="zap;load modellen/hexaan.xyz;zoom 190%;wireframe 20; spacefill 80;rotate x 30">
-</td>		</tr>
-  	<tr>	<td>heptaan</td>
-    		<td>C<sub>7</sub>H<sub>16</sub>
-<embed type="application/x-spt" width="16" height="16" button="push" target="alkaan" script="zap;load modellen/heptaan.xyz;zoom 180%;wireframe 20; spacefill 80;rotate x 30">
-</td>		</tr>
-  	<tr>	<td>octaan</td>
-    		<td>C<sub>8</sub>H<sub>18</sub>
-<embed type="application/x-spt" width="16" height="16" button="push" target="alkaan" script="zap;load modellen/octaan1.xyz;zoom 170%;wireframe 20; spacefill 80;rotate x 30">
-<embed type="application/x-spt" width="16" height="16" button="push" target="alkaan" script="zap;load modellen/octaan2.xyz;zoom 170%;wireframe 20; spacefill 80;rotate x 30"><br>
-(twee van de vele mogelijke <i>conformaties</i> van dezelfde structuur)
-</td>		</tr>
-	</tbody></table>
-<p>
-De vertakte alkanen laten we voor wat ze zijn. 
-Het volgende hoofdstuk gaat over <a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/etheen.html">alkenen</a>.
-</p>
+    <hr size="2" width="100%" align="Center" />
+    <br />
+    <center>
+		<table width="50%" border="0" cellspacing="2" cellpadding="2">
+		  <tr valign="TOP">
+			<td align="RIGHT">
+			  <a
+				href="methaan.html"
+				onMouseOver="window.status='Vorige'; return true;"
+				onMouseOut="window.status=' '; "
+			  >
+				<img src="knoppen/knop_links.jpg" align="Absmiddle" border="0"
+			  /></a>
+			</td>
+  
+			<td align="RIGHT">
+			  <a
+				href="index.html"
+				onMouseOver="window.status='index'; return true;"
+				onMouseOut="window.status=' '; "
+			  >
+				<img src="knoppen/info.gif" align="Absmiddle" border="0"
+			  /></a>
+			</td>
+			<td>
+			  <a
+				href="etheen.html"
+				onMouseOver="window.status='Volgende'; return true;"
+				onMouseOut="window.status=' '; "
+			  >
+				<img src="knoppen/knop_rechts.jpg" align="Absmiddle" border="0"
+			  /></a>
+			</td>
+		  </tr>
+		</table>
+	  </center>
 
-<hr size="2" width="100%" align="Center">
-<br>
-<center>
-<table width="20%" border="0" cellspacing="2" cellpadding="2">
-<tbody><tr valign="TOP">
-	<td align="RIGHT">	<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/methaan.html" onmouseover="window.status=&#39;Terug&#39;; return true;" onmouseout="window.status=&#39; &#39;; "> 
-				<img src="./ethaan_files/knop_links.jpg" align="Absmiddle" border="0"></a></td>
-<td align="RIGHT">	<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/index.html" onmouseover="window.status=&#39;index&#39;; return true;" onmouseout="window.status=&#39; &#39;; "> 
-				<img src="./ethaan_files/info.gif" align="Absmiddle" border="0"></a></td>
+	  <!-- <center>
+      <table width="20%" border="0" cellspacing="2" cellpadding="2">
+        <tbody>
+          <tr valign="TOP">
+            <td align="RIGHT">
+              <a
+                href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/methaan.html"
+                onmouseover="window.status=&#39;Terug&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img
+                  src="./ethaan_files/knop_links.jpg"
+                  align="Absmiddle"
+                  border="0"
+              /></a>
+            </td>
+            <td align="RIGHT">
+              <a
+                href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/index.html"
+                onmouseover="window.status=&#39;index&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img src="./ethaan_files/info.gif" align="Absmiddle" border="0"
+              /></a>
+            </td>
 
-	<td>			<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/etheen.html" onmouseover="window.status=&#39;Volgende&#39;; return true;" onmouseout="window.status=&#39; &#39;; "> 
-				<img src="./ethaan_files/knop_rechts.jpg" align="Absmiddle" border="0"></a></td>
-</tr></tbody></table></center>
-<br><br><br>
-
-
- 
-
-</body><style id="stylish-2" class="stylish" type="text/css">.form-control {
-    width: 100% !important;
-}</style></html>
+            <td>
+              <a
+                href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/etheen.html"
+                onmouseover="window.status=&#39;Volgende&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img
+                  src="./ethaan_files/knop_rechts.jpg"
+                  align="Absmiddle"
+                  border="0"
+              /></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center> -->
+    <br /><br /><br />
+  </body>
+</html>
