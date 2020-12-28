@@ -1,122 +1,364 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title>asymmetrie 1</title>
 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>asymmetrie 1</title>
+    <style type="text/css">
+      BODY {
+        font-family: Comic Sans MS, sans-serif;
+        background: white;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      P {
+        font-family: Comic Sans MS, sans-serif;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      TD {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      UL {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      OL {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      H2 {
+        font-family: Comic Sans MS, sans-serif;
+        color: orange;
+      }
+      H3 {
+        font-family: Comic Sans MS, sans-serif;
+        color: orange;
+      }
+      H4 {
+        font-family: Comic Sans MS, sans-serif;
+        color: orange;
+      }
+      H5 {
+        font-family: Comic Sans MS, sans-serif;
+        color: red;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/themes/default/kekule.css"
+    />
+    <script src="./js/three.min.js"></script>
+    <script src="./js/raphael.min.js"></script>
+    <script src="./js/kekule/kekule.min.js"></script>
 
-<style type="text/css">
-BODY  {font-family: Comic Sans MS, sans-serif;background:white;margin-left:10px;margin-right:10px}
-P {font-family: Comic Sans MS, sans-serif;margin-left:10px;margin-right:10px}
-TD {font-family: Comic Sans MS, sans-serif}
-UL {font-family: Comic Sans MS, sans-serif}
-OL {font-family: Comic Sans MS, sans-serif}
-H2 {font-family: Comic Sans MS, sans-serif;color:orange}
-H3 {font-family: Comic Sans MS, sans-serif;color:orange}
-H4 {font-family: Comic Sans MS, sans-serif;color:orange}
-H5 {font-family: Comic Sans MS, sans-serif;color:red}
-</style>
+    <script>
+      //   function popUp(theURL) {
+      //     var newWin = open(
+      //       theURL,
+      //       "Asymmetrie",
+      //       "resizable=1,menubar=0,scrollbars=0"
+      //     );
+      //   }
+    </script>
+  </head>
+  <body>
+    <a name="TOP"> </a>
 
-<script>
-function popUp(theURL) {
-    var newWin=open(theURL,'Asymmetrie', 'resizable=1,menubar=0,scrollbars=0');}
-</script>
+    <h2>4. Optische isomerie</h2>
+    <p>
+      We hebben inmiddels verscheidene koolwaterstof-modellen gezien, opgebouwd
+      uit de donkergrijze C-atomen en lichtgrijze H-atomen. Zoals je weet zijn
+      er veel meer atoom-soorten die regelmatig voorkomen in de organische
+      chemie, zoals broom, jood, chloor, zuurstof en stikstof. Op de inleidende
+      pagina staat een afbeelding met alle atoomsoorten en hun kleur 'bolletje'
+      in de modellen. <br />
+      De halogenen hebben net als waterstof covalentie 1, wat betekent dat ze de
+      plaats van waterstof in kunnen nemen in koolwaterstoffen.<br />
+      [Zuurstof en stikstof daarentegen kunnen meer dan &eacute;&eacute;n
+      binding aangaan, en dus onderdeel gaan uitmaken van een molecuul-skelet.
+      Ze kunnen twee (stikstof zelfs drie) alkaan-ketens met elkaar verbinden.]
+    </p>
+    <h4>4a. E&eacute;n asymmetrisch koolstofatoom</h4>
+    <p>
+      Hieronder maken we een begin met het vervangen van waterstof-atomen in
+      methaan. Eerst &eacute;&eacute;n, dan twee, dan drie. Dit vervangen wordt
+      in de chemie meestal aangeduid als <i>substitutie</i>, en het betreffende
+      atoom (of groep van atomen) als <i>substituent</i>.
+    </p>
+    <!-- Als je in de modellen
+      op een bepaald atoom klikt (linkermuisknop) komt onderin het venster te
+      staan welk atoom je aan het bekijken bent:
+    </p>
+    <center><img src="./knoppen/id.jpg" border="1" /></center>
+    <p>
+      <font size="-1"
+        >In het plaatje zie je 'Atom: BR 3 Group: MOL 1' Hierin is Br de
+        atoomsoort en '3' het atoomnummer.</font
+      >
+    </p> -->
 
-</head>
-<body>
-<a name="TOP"> </a> 
+    <center>
+      <table width="95%" border="1" cellspacing="2" cellpadding="2">
+        <tbody>
+          <tr valign="TOP">
+            <td>
+              <p>
+                Hier staan twee modellen afgebeeld van broommethaan. Klik eerst
+                in beide modellen het Br-atoom eens aan, zodat je kunt zien welk
+                nummer het atoom in dat model heeft. Je ziet dat het atoomnummer
+                in beide modellen anders is, maar als je het model ronddraait
+                kun je de Br-atomen toch op dezelfde plek manoevreren en blijken
+                beide modellen identiek.
+              </p>
+            </td>
+            <td align="RIGHT" bgcolor="#AADDFF">
+              <span
+                style="display: block; width: 150px; height: 150px"
+                data-widget="Kekule.ChemWidget.Viewer3D"
+                data-chem-obj="url(./modellen/br-methaan.mol)"
+                data-predefined-setting="basic"
+                data-caption="br-methaan"
+              ></span>
+              <!-- <embed
+                src="modellen/br-methaan.mol"
+                frank="no"
+                name="Br-methaan"
+                nomenus="true"
+                script="zoom 300%;rotate x 30;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on"
+                width="150"
+                height="150"
+                bgcolor="#AADDFF"
+              /> -->
+            </td>
+            <td align="RIGHT" bgcolor="#AADDFF">
+              <span
+                style="display: block; width: 150px; height: 150px"
+                data-widget="Kekule.ChemWidget.Viewer3D"
+                data-chem-obj="url(./modellen/br-methaan2.mol)"
+                data-predefined-setting="basic"
+                data-caption="br-methaan2"
+              ></span>
+              <!-- <embed
+                src="modellen/br-methaan2.mol"
+                frank="no"
+                name="Br-methaan"
+                nomenus="true"
+                script="zoom 300%;rotate x 30;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on"
+                width="150"
+                height="150"
+                bgcolor="#AADDFF"
+              /> -->
+            </td>
+          </tr>
+          <tr valign="TOP">
+            <td>
+              <p>
+                In deze twee modellen zijn in methaan twee atomen vervangen door
+                resp. Br en Cl. Ook nu kun je de atoomnummers gaan vergelijken
+                en zul je constateren dat de modellen verschillen van elkaar.
+                Toch is het zo dat als je ze maar op de goede manier draait, je
+                twee identieke modellen kunt krijgen.
+              </p>
+            </td>
+            <td align="RIGHT" bgcolor="#AADDFF">
+              <span
+                style="display: block; width: 150px; height: 150px"
+                data-widget="Kekule.ChemWidget.Viewer3D"
+                data-chem-obj="url(./modellen/br-cl-methaan.mol)"
+                data-predefined-setting="basic"
+                data-caption="br-cl-methaan"
+              ></span>
+              <!-- <embed
+                src="modellen/br-cl-methaan.mol"
+                frank="no"
+                name="Br-methaan"
+                nomenus="true"
+                script="zoom 300%;rotate x 30;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on"
+                width="150"
+                height="150"
+                bgcolor="#AADDFF"
+              /> -->
+            </td>
+            <td align="RIGHT" bgcolor="#AADDFF">
+              <span
+                style="display: block; width: 150px; height: 150px"
+                data-widget="Kekule.ChemWidget.Viewer3D"
+                data-chem-obj="url(./modellen/br-cl-methaan2.mol)"
+                data-predefined-setting="basic"
+                data-caption="br-cl-methaan2"
+              ></span>
+              <!-- <embed
+                src="modellen/br-cl-methaan2.mol"
+                frank="no"
+                name="Br-methaan"
+                nomenus="true"
+                script="zoom 300%;rotate x 30;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on"
+                width="150"
+                height="150"
+                bgcolor="#AADDFF"
+              /> -->
+            </td>
+          </tr>
+          <tr valign="TOP">
+            <td>
+              <p>
+                We gaan nu weer een stapje verder; In de molekulen uit de vorige
+                twee modellen is weer een H-atoom vervangen, dit keer door een
+                I-atoom. Weer zul je zien dat de atoomnummers verschillen. Hoe
+                je de modellen nu ook wendt of keert, je zult nooit twee
+                identieke modellen krijgen!<br />
+                Altijd als twee substitutenten links en rechts dezelfde positie
+                innemen, zijn de andere twee van plaats verwisseld.
+              </p>
+            </td>
+            <td align="RIGHT" bgcolor="#AADDFF">
+              <span
+                style="display: block; width: 150px; height: 150px"
+                data-widget="Kekule.ChemWidget.Viewer3D"
+                data-chem-obj="url(./modellen/br-cl-i-methaan.mol)"
+                data-predefined-setting="basic"
+                data-caption="br-cl-i-methaan"
+              ></span>
+              <!-- <embed
+                src="modellen/br-cl-i-methaan.mol"
+                frank="no"
+                name="Br-methaan"
+                nomenus="true"
+                script="zoom 300%;rotate x 30;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on"
+                width="150"
+                height="150"
+                bgcolor="#AADDFF"
+              /> -->
+            </td>
+            <td align="RIGHT" bgcolor="#AADDFF">
+              <span
+                style="display: block; width: 150px; height: 150px"
+                data-widget="Kekule.ChemWidget.Viewer3D"
+                data-chem-obj="url(./modellen/br-cl-i-methaan2.mol)"
+                data-predefined-setting="basic"
+                data-caption="br-cl-i-methaan2"
+              ></span>
+              <!-- <embed
+                src="modellen/br-cl-i-methaan2.mol"
+                frank="no"
+                name="Br-methaan"
+                nomenus="true"
+                script="zoom 300%;rotate x 30;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on"
+                width="150"
+                height="150"
+                bgcolor="#AADDFF"
+              /> -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    <p>
+      Dat is opmerkelijk: twee moleculen, met dezelfde molecuulformule
+      (C-H-Br-Cl-I) en dezelfde structuur-formule blijken in een ruimtelijk
+      model toch nog te verschillen. Deze vorm van stereo-isomerie heet optische
+      isomerie.
+      <br />
+      Een van de manieren waarop het voor kan komen is middels een asymmetrisch
+      C-atoom (zoals hier). Een asymmetrisch C-atoom is een C-atoom waaraan vier
+      <u>verschillende</u> groepen gebonden zijn. Deze groepen kunnen bijna
+      alles zijn wat je binnen de organische chemie kunt bedenken; -H -Br -Cl -I
+      maar ook bijvoorbeeld -CH<sub>3</sub> en C<sub>2</sub>H<sub>5</sub>
+      (bedenk dat deze groepen weer een opbouw hebben volgens de tetraeder). Het
+      opspeuren van een zo'n C-atoom gaat het makkelijkst in de
+      structuur-formule (een projectie van het 3D-model) en men schrijft meestal
+      een sterretje (*) bij het betreffende C-atoom om aan te geven dat het
+      asymmetrisch is.<br />
+      Kijk nog maar eens in de laatste twee modellen; draai je ze zo dat twee
+      van de vier substituenten op dezelfde plek zitten, dan zijn de andere twee
+      precies omgekeerd.<br />Draai je ze nog anders dan zie je dat de modellen
+      elkaars spiegelbeeld zijn:
+    </p>
+    <center><img src="./modellen/spiegel.jpg" /></center>
+    <p></p>
+    <h4>
+      Dit is een belangrijke conclusie:
+      <b
+        >we kunnen optische isomerie verwachten als een molecuul niet identiek
+        is aan zijn spiegelbeeld</b
+      >. Zulke stoffen noemen we <b>chiraal</b>. De meest-voorkomende oorzaak
+      van chiraliteit is de aanwezigheid van een asymmetrisch C-atoom, een C met
+      vier verschillende 'substituenten' (inclusief waterstof).
+    </h4>
+    <p></p>
+    <span
+      style="display: block; width: 600px; height: 300px"
+      data-widget="Kekule.ChemWidget.Viewer3D"
+      data-chem-obj="url(./modellen/voorbeeld.xyz)"
+      data-predefined-setting="basic"
+      data-caption="voorbeeld"
+    ></span>
+    <!-- <embed
+      src="modellen/voorbeeld.xyz"
+      frank="no"
+      nomenus="true"
+      script="zoom 190;rotate x 30;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on; label on; set fontsize 14;color label black"
+      width="600"
+      height="300"
+      bgcolor="#AADDFF"
+    /> -->
+    <p>
+      <a
+        href="javascript:window.popup('Het goede antwoord moest zijn:
+	  C-0, het zwarte atoom.');"
+        ><img src="./question.gif" align="left" border="no"
+      /></a>
+      Welke C-atoom is in dit (fictieve) voorbeeld asymmetrisch? (Klik op het
+      handje voor het antwoord)
+    </p>
+    <p>
+      Dit betrof &eacute;&eacute;n asymmetrisch koolstof-atoom. Maar er kunnen
+      er
+      <a href="./asymm2.html">meer voorkomen in een molecuul</a>.
+    </p>
+    <hr size="2" width="100%" align="Center" />
+    <br />
+    <center>
+      <table width="50%" border="0" cellspacing="2" cellpadding="2">
+        <tbody>
+          <tr valign="TOP">
+            <td align="RIGHT">
+              <a
+                href="./cistrans.html"
+                onmouseover="window.status=&#39;Vorige&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img
+                  src="./knoppen/knop_links.jpg"
+                  align="Absmiddle"
+                  border="0"
+              /></a>
+            </td>
 
-<h2>4. Optische isomerie</h2>
-<p>
-We hebben inmiddels verscheidene koolwaterstof-modellen gezien, opgebouwd uit de donkergrijze C-atomen en lichtgrijze H-atomen. Zoals je weet zijn er veel meer atoom-soorten die regelmatig voorkomen in de organische chemie, zoals broom, jood, chloor, zuurstof en stikstof. Op de inleidende pagina staat een afbeelding met alle atoomsoorten en hun kleur 'bolletje' in de modellen. <br>
-De halogenen hebben net als waterstof covalentie 1, wat betekent dat ze de plaats
-van waterstof in kunnen nemen in koolwaterstoffen.<br>
-[Zuurstof en stikstof daarentegen kunnen meer dan ��n binding aangaan, en dus
-onderdeel gaan uitmaken van een molecuul-skelet. Ze kunnen twee (stikstof zelfs 
-drie) alkaan-ketens met elkaar verbinden.]
-</p>
-<h4>4a. E�n asymmetrisch koolstofatoom</h4>
-<p>
-Hieronder maken we een begin met het vervangen van waterstof-atomen in methaan.
-Eerst ��n, dan twee, dan drie. Dit vervangen wordt in de chemie
-meestal aangeduid als <i>substitutie</i>, en het betreffende atoom (of groep van
-atomen) als <i>substituent</i>. 
-Als je in de modellen op een bepaald atoom klikt (linkermuisknop) komt onderin het venster te staan welk atoom je aan het bekijken bent:
-</p>
-<center><img src="./knoppen/id.jpg" border="1"></center>
-<p>
-<font size="-1">In het plaatje zie je 'Atom: BR 3  Group: MOL 1' Hierin is Br de atoomsoort en '3' het atoomnummer.</font>
-</p>
-
-<center>
-<table width="95%" border="1" cellspacing="2" cellpadding="2">
-<tbody><tr valign="TOP"><td><p>
-Hier staan twee modellen afgebeeld van broommethaan. Klik eerst in beide modellen het Br-atoom eens aan, zodat je kunt zien welk nummer het atoom in dat model heeft. Je ziet dat het atoomnummer in beide modellen anders is, maar als je het model ronddraait kun je de Br-atomen toch op dezelfde plek manoevreren en blijken beide modellen identiek.</p>
-</td>
-<td align="RIGHT" bgcolor="#AADDFF">
-<embed src="modellen/br-methaan.mol" frank="no" name="Br-methaan" nomenus="true" script="zoom 300%;rotate x 30;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on" width="150" height="150" bgcolor="#AADDFF">
-</td>
-<td align="RIGHT" bgcolor="#AADDFF">
-<embed src="modellen/br-methaan2.mol" frank="no" name="Br-methaan" nomenus="true" script="zoom 300%;rotate x 30;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on" width="150" height="150" bgcolor="#AADDFF">
-</td></tr>
-<tr valign="TOP"><td><p>
-In deze twee modellen zijn in methaan twee atomen vervangen door resp. Br en Cl. Ook nu kun je de atoomnummers gaan vergelijken en zul je constateren dat de modellen verschillen van elkaar. Toch is het zo dat als je ze maar op de goede manier draait, je twee identieke modellen kunt krijgen.</p>
-</td>
-<td align="RIGHT" bgcolor="#AADDFF">
-<embed src="modellen/br-cl-methaan.mol" frank="no" name="Br-methaan" nomenus="true" script="zoom 300%;rotate x 30;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on" width="150" height="150" bgcolor="#AADDFF">
-</td><td align="RIGHT" bgcolor="#AADDFF">
-<embed src="modellen/br-cl-methaan2.mol" frank="no" name="Br-methaan" nomenus="true" script="zoom 300%;rotate x 30;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on" width="150" height="150" bgcolor="#AADDFF">
-</td></tr>
-<tr valign="TOP"><td><p>
-We gaan nu weer een stapje verder; In de molekulen uit de vorige twee modellen is weer een H-atoom vervangen, dit keer door een I-atoom. Weer zul je zien dat de atoomnummers verschillen. Hoe je de modellen nu ook wendt of keert, je zult nooit twee identieke modellen krijgen!<br>
-Altijd als twee substitutenten links en rechts dezelfde positie innemen, zijn
-de andere twee van plaats verwisseld.
-</p>
-</td><td align="RIGHT" bgcolor="#AADDFF">
-<embed src="modellen/br-cl-i-methaan.mol" frank="no" name="Br-methaan" nomenus="true" script="zoom 300%;rotate x 30;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on" width="150" height="150" bgcolor="#AADDFF">
-</td><td align="RIGHT" bgcolor="#AADDFF">
-<embed src="modellen/br-cl-i-methaan2.mol" frank="no" name="Br-methaan" nomenus="true" script="zoom 300%;rotate x 30;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on" width="150" height="150" bgcolor="#AADDFF">
-</td></tr>
-</tbody></table>
-</center>
-<p>
-Dat is opmerkelijk: twee moleculen, met dezelfde molecuulformule (C-H-Br-Cl-I) en dezelfde structuur-formule blijken in een ruimtelijk model toch nog te
-verschillen. Deze vorm van stereo-isomerie heet optische isomerie. 
-<br>
-Een van de manieren waarop het voor kan komen is middels een asymmetrisch C-atoom (zoals hier). Een asymmetrisch C-atoom is een C-atoom waaraan vier <u>verschillende</u> groepen gebonden zijn. Deze groepen kunnen bijna alles zijn wat je binnen de organische chemie kunt bedenken; -H -Br -Cl -I maar ook bijvoorbeeld -CH<sub>3</sub> en C<sub>2</sub>H<sub>5</sub> (bedenk dat deze groepen weer een opbouw hebben volgens de tetraeder). Het opspeuren van een zo'n C-atoom gaat het makkelijkst in de structuur-formule (een projectie van het 3D-model) en men schrijft meestal een sterretje (*) bij het betreffende C-atoom om aan te geven dat het asymmetrisch is.<br>
-Kijk nog maar eens in de laatste twee modellen; draai je ze zo dat twee van de vier substituenten op dezelfde plek zitten, dan zijn de andere twee precies omgekeerd.<br>Draai je ze nog anders dan zie je dat de modellen elkaars spiegelbeeld zijn:</p>
-<center><img src="./knoppen/spiegel.jpg"></center>
-<p>
-</p><h4>
-Dit is een belangrijke conclusie: <b>we kunnen optische isomerie verwachten als
-een molecuul niet identiek is aan zijn spiegelbeeld</b>. Zulke stoffen noemen
-we <b>chiraal</b>. De meest-voorkomende oorzaak van chiraliteit is de
-aanwezigheid van een asymmetrisch C-atoom, een C met vier verschillende 'substituenten' (inclusief waterstof).</h4>
-<p></p>
-<embed src="modellen/voorbeeld.xyz" frank="no" nomenus="true" script="zoom 190;rotate x 30;wireframe 30;spacefill 100;select hydrogen;spacefill 70;select *;set specular on; label on; set fontsize 14;color label black" width="600" height="300" bgcolor="#AADDFF">
-<p>
-<a href="javascript:popUp(&#39;antwoord.html&#39;);"><img src="./knoppen/question.gif" align="left" border="no"></a>
-Welke C-atoom is in dit (fictieve) voorbeeld asymmetrisch? (Klik op het handje voor het antwoord)
-</p>
-<p>Dit betrof ��n asymmetrisch koolstof-atoom. Maar er kunnen er
-<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/asymm2.html">meer voorkomen in een molecuul</a>.
-</p>
-<hr size="2" width="100%" align="Center">
-<br>
-<center>
-<table width="50%" border="0" cellspacing="2" cellpadding="2">
-<tbody><tr valign="TOP">
-	<td align="RIGHT">	<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/cistrans.html" onmouseover="window.status=&#39;Vorige&#39;; return true;" onmouseout="window.status=&#39; &#39;; "> 
-				<img src="./knoppen/knop_links.jpg" align="Absmiddle" border="0"></a></td>
-
-<td align="RIGHT">	<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/index.html" onmouseover="window.status=&#39;index&#39;; return true;" onmouseout="window.status=&#39; &#39;; "> 
-				<img src="./knoppen/info.gif" align="Absmiddle" border="0"></a></td>
-	<td>			<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/asymm2.html" onmouseover="window.status=&#39;Volgende&#39;; return true;" onmouseout="window.status=&#39; &#39;; "> 
-				<img src="./knoppen/knop_rechts.jpg" align="Absmiddle" border="0"></a></td>
-</tr></tbody></table></center>
-<br><br><br>
-
-
- 
-
-
-</body><style id="stylish-2" class="stylish" type="text/css">.form-control {
-    width: 100% !important;
-}</style></html>
+            <td align="RIGHT">
+              <a
+                href="./index.html"
+                onmouseover="window.status=&#39;index&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img src="./knoppen/info.gif" align="Absmiddle" border="0"
+              /></a>
+            </td>
+            <td>
+              <a
+                href="./asymm2.html"
+                onmouseover="window.status=&#39;Volgende&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img
+                  src="./knoppen/knop_rechts.jpg"
+                  align="Absmiddle"
+                  border="0"
+              /></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    <br /><br /><br />
+  </body>
+</html>

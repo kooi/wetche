@@ -34,8 +34,8 @@ Er is van alles te doen om dit te updaten. Grote stappen zijn:
   - [x] b. Cyclohexaan, stoel en boot
   - [x] c. Cis en trans
   - [ ] 4. Optische isomerie
-  - [ ] a. 1 asymmetrisch C atoom
-  - [ ] b. 2 asymmetrische centra
+  - [x] a. 1 asymmetrisch C atoom
+  - [x] b. 2 asymmetrische centra
   - [ ] c. Optische activiteit
   - [ ] d. Substitutie mechanismen
   - [ ] 5. Een testje
