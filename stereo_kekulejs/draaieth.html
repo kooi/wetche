@@ -45,7 +45,15 @@
         color: red;
       }
     </style>
-    <script src="./draaieth_files/moiscript.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/themes/default/kekule.css"
+    />
+    <script src="./js/three.min.js"></script>
+    <script src="./js/raphael.min.js"></script>
+    <script src="./js/kekule/kekule.min.js"></script>
+    <script src="./js/moiscript.js"></script>
     <script language="JavaScript">
       //array voor energieen en coordinaten
       data = new Array();
@@ -167,28 +175,30 @@
       coordy[35] = 358;
       coordy[36] = 367;
 
-      function initialize() {
-        initdivs();
-        divanchor("enplot");
-        divmove("ball", coordy[0] - 8, coordx[0] - 8);
-        init_chime();
-      }
+      // function initialize() {
+      //   initdivs();
+      //   divanchor("enplot");
+      //   divmove("ball", coordy[0] - 8, coordx[0] - 8);
+      //   init_chime();
+      // }
 
-      function JSAnimcontrol(PlugName, FrameNo) {
-        divmove("ball", coordy[FrameNo] - 5, coordx[FrameNo] - 8);
+      // function JSAnimcontrol(PlugName, FrameNo) {
+      //   divmove("ball", coordy[FrameNo] - 5, coordx[FrameNo] - 8);
 
-        //reset the value of the text area:
+      //   //reset the value of the text area:
 
-        document.pleo.messageboard.value =
-          ">>>>" + data[FrameNo] + "<<<<" + (FrameNo + 1) + "\n";
-      }
-      function showframe(framenr) {
-        commandstring = "anim frame " + framenr;
-        input_script("snchime", commandstring);
-      }
+      //   document.pleo.messageboard.value =
+      //     ">>>>" + data[FrameNo] + "<<<<" + (FrameNo + 1) + "\n";
+      // }
+
+      // function showframe(framenr) {
+      //   commandstring = "anim frame " + framenr;
+      //   input_script("snchime", commandstring);
+      // }
     </script>
   </head>
-  <body onload="initialize()">
+  <body>
+    <!-- <body onload="initialize()"> -->
     <h3>2. Conformaties en stereoisomeren</h3>
     <p>
       In het begin hebben we al gezien dat van langere alkanen (zie octaan in de
@@ -220,10 +230,10 @@
       7, 19 en 31, de minima in de grafiek.
     </p>
     <p>
-      Naast het model staat een grafiek waarin de potenti�le energie van het
-      molecuul is uitgezet tegen de draaihoek, in stappen van 10�. Het model kun
+      Naast het model staat een grafiek waarin de potenti&euml;le energie van het
+      molecuul is uitgezet tegen de draaihoek, in stappen van 10&deg;. Het model kun
       je weer ronddraaien, ook tijdens de animatie. Met de knoppen onder het
-      model kun je de animatie starten en stoppen of ��n frame voor- of
+      model kun je de animatie starten en stoppen of &eacute;&eacute;n frame voor- of
       achteruit gaan. In het venstertje eronder kun je nog eens de energie,
       draaihoek en framenummer zien.
     </p>
@@ -240,7 +250,14 @@
             />
           </td>
           <td align="center">
-            <script language="JavaScript">
+            <span
+              style="display: block; width: 300px; height: 240px"
+              data-widget="Kekule.ChemWidget.Viewer3D"
+              data-chem-obj="url(./modellen/ethaan.xyz)"
+              data-predefined-setting="basic"
+              data-caption="ethaan"
+            ></span>
+            <!-- <script language="JavaScript">
               define_chime(
                 window,
                 "snchime",
@@ -250,8 +267,8 @@
                 "modellen/ethaan.xyz",
                 "wireframe 40;spacefill 120;zoom 190;select *;set specular on;select hydrogen; spacefill 70; select *;background [xFFFFFF];set picking distance;anim fps 1;anim frame next;animation off"
               );
-            </script>
-            <table
+            </script> -->
+            <!-- <table
               border="0"
               cellspacing="0"
               cellpadding="0"
@@ -263,7 +280,7 @@
                   <td></td>
                 </tr>
               </tbody>
-            </table>
+            </table> -->
           </td>
         </tr>
       </tbody>
@@ -369,20 +386,16 @@
       electronen in de C-H bindingen. Het molecuul heeft een voorkeur voor de
       alternerende vorm of <i>conformatie</i>.<br />
       De mogelijke conformaties gaan in het algemeen gemakkelijk in elkaar over,
-      door draaiing over een hoek van 120�.
+      door draaiing over een hoek van 120&deg;.
       <br />
       Vervangen we op beide C's een H door een grotere groep, dan zullen de drie
       minima niet meer gelijk zijn, maar de conformaties blijven in elkaar
       overgaan. Als extraatje kun je
-      <a href="diclrot.html"
-        >dichloorethaan</a
-      >
+      <a href="diclrot.html">dichloorethaan</a>
       bekijken.
       <br />
       Hoe zit dat bij de
-      <a href="ezetheen.html"
-        >alkenen</a
-      >?
+      <a href="ezetheen.html">alkenen</a>?
     </p>
     <hr size="2" width="100%" align="Center" />
     <br />
@@ -397,7 +410,7 @@
                 onmouseout="window.status=&#39; &#39;; "
               >
                 <img
-                  src="./draaieth_files/knop_links.jpg"
+                  src="./knoppen/knop_links.jpg"
                   align="Absmiddle"
                   border="0"
               /></a>
@@ -405,15 +418,12 @@
 
             <td align="RIGHT">
               <a
-                href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/index.html"
+                href="./index.html"
                 onmouseover="window.status=&#39;index&#39;; return true;"
                 onmouseout="window.status=&#39; &#39;; "
               >
-                <img
-                  src="./draaieth_files/info.gif"
-                  align="Absmiddle"
-                  border="0"
-              /></a>
+                <img src="./knoppen/info.gif" align="Absmiddle" border="0" />
+              </a>
             </td>
             <td>
               <a
@@ -422,7 +432,7 @@
                 onmouseout="window.status=&#39; &#39;; "
               >
                 <img
-                  src="./draaieth_files/knop_rechts.jpg"
+                  src="./knoppen/knop_rechts.jpg"
                   align="Absmiddle"
                   border="0"
               /></a>

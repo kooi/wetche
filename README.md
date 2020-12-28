@@ -19,23 +19,23 @@ Er is van alles te doen om dit te updaten. Grote stappen zijn:
   - [ ] Quiz implementeren 
   - [ ] 'Extra' pagina's
 
-  1. Ruimtelijke structuren
+  - [x] 1. Ruimtelijke structuren
   - [x] a. Methaan, tetraeder
   - [x] b. Ethaan
   - [x] c. Etheen, trigonale structuur
   - [x] d. Ethyn, lineaire structuur
-  2. Conformaties en Stereoisomeren
-  - [ ] a. Draaien in ethaan
+  - [x] 2. Conformaties en Stereoisomeren
+  - [x] a. Draaien in ethaan
     extra: https://www3.cmbi.umcn.nl/wetche/vwo/stereo/editnl.html
     extra: 'universitaire versie' https://www3.cmbi.umcn.nl/wetche/organic/mopjob.html
   - [x] b. Draaien in etheen, cis/trans
-  3. Cyclische structuren
+  - [x] 3. Cyclische structuren
   - [x] a. Cycloalkanen
-  - b. Cyclohexaan, stoel en boot
-  - c. Cis en trans
-  4. Optische isomerie
-  - a. 1 asymmetrisch C atoom
-  - b. 2 asymmetrische centra
-  - c. Optische activiteit
-  - d. Substitutie mechanismen
-  5. Een testje
+  - [x] b. Cyclohexaan, stoel en boot
+  - [x] c. Cis en trans
+  - [ ] 4. Optische isomerie
+  - [ ] a. 1 asymmetrisch C atoom
+  - [ ] b. 2 asymmetrische centra
+  - [ ] c. Optische activiteit
+  - [ ] d. Substitutie mechanismen
+  - [ ] 5. Een testje

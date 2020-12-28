@@ -1,344 +1,551 @@
-
 <!-- saved from url=(0054)https://www3.cmbi.umcn.nl/wetche/vwo/stereo/stoel.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>Stoel en boot</title>
-</head>
-<body onload="initialize()">
-<style type="text/css">
-#ball {position:absolute;left:0;top:0}
-BODY  {font-family: Comic Sans MS, sans-serif;background:white;margin-left:10px;margin-right:10px}
-P {font-family: Comic Sans MS, sans-serif}
-TD {font-family: Comic Sans MS, sans-serif}
-UL {font-family: Comic Sans MS, sans-serif}
-OL {font-family: Comic Sans MS, sans-serif}
-H2 {font-family: Comic Sans MS, sans-serif;color:green}
-H3 {font-family: Comic Sans MS, sans-serif;color:green}
-H4 {font-family: Comic Sans MS, sans-serif;color:green}
-H5 {font-family: Comic Sans MS, sans-serif;color:red}
-</style>
-<script src="./stoel_files/moiscript.js.download" language="JavaScript"></script>
-<script language="JavaScript">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title>Stoel en boot</title>
+  </head>
+  <body onload="initialize()">
+    <style type="text/css">
+      #ball {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      BODY {
+        font-family: Comic Sans MS, sans-serif;
+        background: white;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      P {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      TD {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      UL {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      OL {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      H2 {
+        font-family: Comic Sans MS, sans-serif;
+        color: green;
+      }
+      H3 {
+        font-family: Comic Sans MS, sans-serif;
+        color: green;
+      }
+      H4 {
+        font-family: Comic Sans MS, sans-serif;
+        color: green;
+      }
+      H5 {
+        font-family: Comic Sans MS, sans-serif;
+        color: red;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/themes/default/kekule.css"
+    />
+    <script src="./js/three.min.js"></script>
+    <script src="./js/raphael.min.js"></script>
+    <script src="./js/kekule/kekule.min.js"></script>
+    <script src="./js/moiscript.js" language="JavaScript"></script>
+    <script language="JavaScript">
+      data = new Array();
+      data[0] = "relatieve energie  0.11   kJ  stoel conformatie";
+      data[1] = "relatieve energie  1.14   kJ";
+      data[2] = "relatieve energie  3.76   kJ";
+      data[3] = "relatieve energie  7.46   kJ";
+      data[4] = "relatieve energie 11.80  kJ";
+      data[5] = "relatieve energie 16.33  kJ";
+      data[6] = "relatieve energie 20.61  kJ";
+      data[7] = "relatieve energie 24.08  kJ";
+      data[8] = "relatieve energie 26.42  kJ";
+      data[9] = "relatieve energie 27.35  kJ  half-stoel conformatie";
+      data[10] = "relatieve energie 26.94  kJ";
+      data[11] = "relatieve energie 25.43  kJ";
+      data[12] = "relatieve energie 23.13  kJ";
+      data[13] = "relatieve energie 20.48  kJ";
+      data[14] = "relatieve energie 17.82  kJ";
+      data[15] = "relatieve energie 15.53  kJ";
+      data[16] = "relatieve energie 13.93  kJ";
+      data[17] = "relatieve energie 13.33  kJ  twist-boot conformatie";
+      data[18] = "relatieve energie 14.48  kJ";
+      data[19] = "relatieve energie 16.58  kJ";
+      data[20] = "relatieve energie 19.32  kJ";
+      data[21] = "relatieve energie 22.19  kJ";
+      data[22] = "relatieve energie 24.78  kJ";
+      data[23] = "relatieve energie 26.61  kJ";
+      data[24] = "relatieve energie 27.37  kJ  half-stoel conformatie";
+      data[25] = "relatieve energie 26.84  kJ";
+      data[26] = "relatieve energie 25.03  kJ";
+      data[27] = "relatieve energie 22.08  kJ";
+      data[28] = "relatieve energie 18.33  kJ";
+      data[29] = "relatieve energie 14.12  kJ";
+      data[30] = "relatieve energie  9.84  kJ";
+      data[31] = "relatieve energie  5.92  kJ";
+      data[32] = "relatieve energie  2.86  kJ";
+      data[33] = "relatieve energie  0.61  kJ";
+      data[34] = "relatieve energie  0.00  kJ  stoel conformatie";
 
-data = new Array();
-    data[0] = "relatieve energie  0.11   kJ  stoel conformatie"; 
-    data[1] = "relatieve energie  1.14   kJ"; 
-    data[2] = "relatieve energie  3.76   kJ"; 
-    data[3] = "relatieve energie  7.46   kJ"; 
-    data[4] = "relatieve energie 11.80  kJ"; 
-    data[5] = "relatieve energie 16.33  kJ"; 
-    data[6] = "relatieve energie 20.61  kJ"; 
-    data[7] = "relatieve energie 24.08  kJ"; 
-    data[8] = "relatieve energie 26.42  kJ"; 
-    data[9] = "relatieve energie 27.35  kJ  half-stoel conformatie"; 
-    data[10] = "relatieve energie 26.94  kJ"; 
-    data[11] = "relatieve energie 25.43  kJ"; 
-    data[12] = "relatieve energie 23.13  kJ"; 
-    data[13] = "relatieve energie 20.48  kJ"; 
-    data[14] = "relatieve energie 17.82  kJ"; 
-    data[15] = "relatieve energie 15.53  kJ"; 
-    data[16] = "relatieve energie 13.93  kJ"; 
-    data[17] = "relatieve energie 13.33  kJ  twist-boot conformatie"; 
-    data[18] = "relatieve energie 14.48  kJ"; 
-    data[19] = "relatieve energie 16.58  kJ"; 
-    data[20] = "relatieve energie 19.32  kJ"; 
-    data[21] = "relatieve energie 22.19  kJ"; 
-    data[22] = "relatieve energie 24.78  kJ"; 
-    data[23] = "relatieve energie 26.61  kJ"; 
-    data[24] = "relatieve energie 27.37  kJ  half-stoel conformatie"; 
-    data[25] = "relatieve energie 26.84  kJ"; 
-    data[26] = "relatieve energie 25.03  kJ"; 
-    data[27] = "relatieve energie 22.08  kJ"; 
-    data[28] = "relatieve energie 18.33  kJ"; 
-    data[29] = "relatieve energie 14.12  kJ"; 
-    data[30] = "relatieve energie  9.84  kJ"; 
-    data[31] = "relatieve energie  5.92  kJ"; 
-    data[32] = "relatieve energie  2.86  kJ"; 
-    data[33] = "relatieve energie  0.61  kJ"; 
-    data[34] = "relatieve energie  0.00  kJ  stoel conformatie"; 
-   
+      coordx = new Array();
+      coordx[0] = 209;
+      coordx[1] = 202;
+      coordx[2] = 185;
+      coordx[3] = 162;
+      coordx[4] = 134;
+      coordx[5] = 105;
+      coordx[6] = 77;
+      coordx[7] = 55;
+      coordx[8] = 40;
+      coordx[9] = 34;
+      coordx[10] = 37;
+      coordx[11] = 47;
+      coordx[12] = 61;
+      coordx[13] = 78;
+      coordx[14] = 95;
+      coordx[15] = 110;
+      coordx[16] = 120;
+      coordx[17] = 124;
+      coordx[18] = 117;
+      coordx[19] = 103;
+      coordx[20] = 86;
+      coordx[21] = 67;
+      coordx[22] = 51;
+      coordx[23] = 39;
+      coordx[24] = 34;
+      coordx[25] = 38;
+      coordx[26] = 49;
+      coordx[27] = 68;
+      coordx[28] = 92;
+      coordx[29] = 119;
+      coordx[30] = 146;
+      coordx[31] = 172;
+      coordx[32] = 191;
+      coordx[33] = 206;
+      coordx[34] = 210;
 
-coordx = new Array();
-coordx[0] = 209;
-coordx[1] = 202;
-coordx[2] = 185;
-coordx[3] = 162;
-coordx[4] = 134;
-coordx[5] = 105;
-coordx[6] = 77;
-coordx[7] = 55;
-coordx[8] = 40;
-coordx[9] = 34;
-coordx[10] = 37;
-coordx[11] = 47;
-coordx[12] = 61;
-coordx[13] = 78;
-coordx[14] = 95;
-coordx[15] = 110;
-coordx[16] = 120;
-coordx[17] = 124;
-coordx[18] = 117;
-coordx[19] = 103;
-coordx[20] = 86;
-coordx[21] = 67;
-coordx[22] = 51;
-coordx[23] = 39;
-coordx[24] = 34;
-coordx[25] = 38;
-coordx[26] = 49;
-coordx[27] = 68;
-coordx[28] = 92;
-coordx[29] = 119;
-coordx[30] = 146;
-coordx[31] = 172;
-coordx[32] = 191;
-coordx[33] = 206;
-coordx[34] = 210;
+      coordy = new Array();
+      coordy[0] = 72;
+      coordy[1] = 80;
+      coordy[2] = 89;
+      coordy[3] = 98;
+      coordy[4] = 106;
+      coordy[5] = 115;
+      coordy[6] = 124;
+      coordy[7] = 132;
+      coordy[8] = 141;
+      coordy[9] = 150;
+      coordy[10] = 158;
+      coordy[11] = 167;
+      coordy[12] = 176;
+      coordy[13] = 184;
+      coordy[14] = 193;
+      coordy[15] = 202;
+      coordy[16] = 210;
+      coordy[17] = 219;
+      coordy[18] = 228;
+      coordy[19] = 236;
+      coordy[20] = 245;
+      coordy[21] = 254;
+      coordy[22] = 262;
+      coordy[23] = 271;
+      coordy[24] = 280;
+      coordy[25] = 288;
+      coordy[26] = 297;
+      coordy[27] = 306;
+      coordy[28] = 314;
+      coordy[29] = 323;
+      coordy[30] = 332;
+      coordy[31] = 340;
+      coordy[32] = 349;
+      coordy[33] = 358;
+      coordy[34] = 367;
 
+      //   function initialize() {
+      //     initdivs();
+      //     divanchor("enplot");
+      //     divmove("ball", coordy[0] - 8, coordx[0] - 8);
+      //     init_chime();
+      //   }
 
-coordy = new Array();
-coordy[0] = 72;
-coordy[1] = 80;
-coordy[2] = 89;
-coordy[3] = 98;
-coordy[4] = 106;
-coordy[5] = 115;
-coordy[6] = 124;
-coordy[7] = 132;
-coordy[8] = 141;
-coordy[9] = 150;
-coordy[10] = 158;
-coordy[11] = 167;
-coordy[12] = 176;
-coordy[13] = 184;
-coordy[14] = 193;
-coordy[15] = 202;
-coordy[16] = 210;
-coordy[17] = 219;
-coordy[18] = 228;
-coordy[19] = 236;
-coordy[20] = 245;
-coordy[21] = 254;
-coordy[22] = 262;
-coordy[23] = 271;
-coordy[24] = 280;
-coordy[25] = 288;
-coordy[26] = 297;
-coordy[27] = 306;
-coordy[28] = 314;
-coordy[29] = 323;
-coordy[30] = 332;
-coordy[31] = 340;
-coordy[32] = 349;
-coordy[33] = 358;
-coordy[34] = 367;
+      //   function JSAnimcontrol(PlugName, FrameNo) {
+      //     divmove("ball", coordy[FrameNo] - 5, coordx[FrameNo] - 8);
 
-function initialize(){
-	initdivs()
-	divanchor("enplot")
-	divmove("ball",coordy[0] - 8,coordx[0] - 8)
-	init_chime()
-}
+      //     document.display.msg.value =
+      //       ">>>>" + data[FrameNo] + "<<<<" + (FrameNo + 1) + "\n";
+      //   }
 
-function JSAnimcontrol( PlugName, FrameNo)
-{
+      // function showframe(framenr) {
+      //     commandstring = "anim frame " + framenr;
+      //     input_script("chchime", commandstring);
+      //   }
+    </script>
 
- divmove("ball",coordy[FrameNo] - 5,coordx[FrameNo] - 8)  ;
+    <h3>3b. Cyclohexaan, stoel en boot</h3>
+    <p>
+      Nu gaan we eens kijken wat de verschijningsvormen van cylcohexaan zijn.
+      Het molecuul streeft naar de ideale hoek van 109,5&deg;, en het blijkt dat met
+      tetraeders een regelmatige zes-ring te vormen is. Meerdere zelfs; we zien
+      hieronder de stoel- en de boot-vorm. <br />
+      De stoel-vorm is het stabielste, omdat daarin ook nog alle bindingen
+      alternerend staan. Je kunt dit controleren door het model zo te draaien
+      dat je langs de C-C bindingen kijkt.<br />
 
+      In de boot-vorm zul je enkele 'eclipsed' conformaties aantreffen. Daarom
+      zal deze in zijn zuivere vorm nauwelijks voorkomen, maar bij voorkeur
+      intern iets verdraaien ('twisten') tot de zogenaamde twist-boot-vorm.
+    </p>
+    <center>
+      <table border="1" cellspacing="2" cellpadding="2">
+        <tbody>
+          <tr valign="TOP">
+            <td bgcolor="#AADDFF">
+              <center>
+                <span
+                  style="display: block; width: 250x; height: 200px"
+                  data-widget="Kekule.ChemWidget.Viewer3D"
+                  data-chem-obj="url(./modellen/cyclohexaanboot.mol)"
+                  data-predefined-setting="basic"
+                  data-caption="cyclohexaanboot"
+                ></span>
+                <!-- <embed
+                  src="modellen/cyclohexaanboot.mol"
+                  frank="no"
+                  name="boot"
+                  display3d="ball&amp;stick"
+                  nomenus="true"
+                  script="zoom 200%; select hydrogen; spacefill 70; select *"
+                  width="250"
+                  height="200"
+                  bgcolor="#AADDFF"
+                /> -->
+              </center>
+            </td>
+            <td bgcolor="#AADDFF">
+              <center>
+                <span
+                  style="display: block; width: 250x; height: 200px"
+                  data-widget="Kekule.ChemWidget.Viewer3D"
+                  data-chem-obj="url(./modellen/cyclohexaanstoel.mol)"
+                  data-predefined-setting="basic"
+                  data-caption="cyclohexaanstoel"
+                ></span>
+                <!-- <embed
+                  src="modellen/cyclohexaanstoel.mol"
+                  frank="no"
+                  name="stoel"
+                  display3d="ball&amp;stick"
+                  nomenus="true"
+                  script="zoom 200%; select hydrogen; spacefill 70; select *"
+                  width="250"
+                  height="200"
+                  bgcolor="#AADDFF"
+                /> -->
+              </center>
+            </td>
+          </tr>
+          <tr valign="TOP">
+            <td>
+              <center><img src="./modellen/bootje.jpg" /></center>
+            </td>
+            <td>
+              <center><img src="./modellen/stoeltje.jpg" /></center>
+            </td>
+          </tr>
+          <tr valign="TOP">
+            <td bgcolor="#AADDFF">
+              <center>
+                <span
+                  style="display: block; width: 250x; height: 200px"
+                  data-widget="Kekule.ChemWidget.Viewer3D"
+                  data-chem-obj="url(./modellen/boot_z.mol)"
+                  data-predefined-setting="basic"
+                  data-caption="boot_z"
+                ></span>
+                <!-- <embed
+                  src="modellen/boot_z.mol"
+                  frank="no"
+                  name="boot"
+                  display3d="ball&amp;stick"
+                  nomenus="true"
+                  script="zoom 200%"
+                  width="250"
+                  height="200"
+                  bgcolor="#AADDFF"
+                /> -->
+              </center>
+            </td>
+            <td bgcolor="#AADDFF">
+              <center>
+                <span
+                  style="display: block; width: 250x; height: 200px"
+                  data-widget="Kekule.ChemWidget.Viewer3D"
+                  data-chem-obj="url(./modellen/stoel_z.mol)"
+                  data-predefined-setting="basic"
+                  data-caption="stoel_z"
+                ></span>
+                <!-- <embed
+                  src="modellen/stoel_z.mol"
+                  frank="no"
+                  name="stoel"
+                  display3d="ball&amp;stick"
+                  nomenus="true"
+                  script="zoom 200%"
+                  width="250"
+                  height="200"
+                  bgcolor="#AADDFF"
+                /> -->
+              </center>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
 
- document.display.msg.value = ">>>>" + data[FrameNo] + "<<<<" + (FrameNo+
-1) + "\n";
- 
+    <h4>Twist-boot-vorm</h4>
+    <p>
+      De twist-boot-vorm komen we tegen bij het omklappen van de stoel-vorm. Als
+      je de atomen zou nummeren, zou je zeer veel stoel-vormen van cyclohexaan
+      kunnen maken, met &eacute;&eacute;n C 'omhoog', en die aan de overkant naar beneden.
+      Dus: 1 omhoog, 4 naar beneden, of 2 omhoog, 5 naar beneden, of 1 naar
+      beneden en 4 omhoog, etc. Al deze vormen zijn energetisch equivalent en
+      kunnen in elkaar overgaan volgens onderstaand proces:
+    </p>
 
-}
-function showframe(framenr)
-{
-        commandstring = "anim frame " + framenr;
-        input_script('chchime',commandstring);
-                }
+    <table border="0" width="100%">
+      <tbody>
+        <tr>
+          <td>
+            <img
+              src="./modellen/chxinv.gif"
+              name="enplot"
+              border="no"
+              usemap="#framesel"
+            />
+          </td>
 
+          <td align="center">
+            <span
+              style="display: block; width: 300x; height: 240px"
+              data-widget="Kekule.ChemWidget.Viewer3D"
+              data-chem-obj="url(./modellen/chxanim.xyz)"
+              data-predefined-setting="basic"
+              data-caption="chxanim"
+            ></span>
+            <!-- <script language="JavaScript">
+              define_chime(
+                window,
+                "chchime",
+                "240",
+                "300",
+                "AnimFrameCallback=JSAnimcontrol",
+                "modellen/chxanim.xyz",
+                "wireframe 40;spacefill off;zoom 190;select *;set specular on;background [xFFFFFF];set picking distance;anim fps 1;anim frame next;animation off"
+              );
+            </script> -->
+            <!-- <table
+              border="0"
+              cellspacing="0"
+              cellpadding="0"
+              height="240"
+              width="300"
+            >
+              <tbody>
+                <tr>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table> -->
+            <form>
+              achtergrond
+              <input
+                type="button"
+                onclick="input_script(&#39;chchime&#39;,&#39;background [15,130,15]&#39;)"
+                value="donker"
+              />
+              <input
+                type="button"
+                onclick="input_script(&#39;chchime&#39;,&#39;background [153,255,153]&#39;)"
+                value="licht"
+              />
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
+    <form name="display">
+      <table width="100%">
+        <tbody>
+          <tr>
+            <td align="center">
+              <input
+                type="button"
+                onclick="input_script(&#39;chchime&#39;,&#39;animation direction -1; anim frame next&#39;)"
+                value="stap terug"
+              />
 
-</script>
+              <input
+                type="button"
+                onclick="input_script(&#39;chchime&#39;,&#39;animation direction 1; anim frame next&#39;)"
+                value="stap vooruit"
+              />
+            </td>
+            <td align="center">
+              Animatie
+              <input
+                type="button"
+                onclick="input_script(&#39;chchime&#39;,&#39;animation on&#39;)"
+                value="aan"
+              />
+              <input
+                type="button"
+                onclick="input_script(&#39;chchime&#39;,&#39;animation off&#39;)"
+                value="uit"
+              />
+            </td>
+          </tr>
 
+          <tr>
+            <td align="center" colspan="2">
+              <textarea name="msg" rows="1" cols="40">
+===&gt;relatieve energie   0.11   kJ  stoel conformatie&lt;===1
+</textarea
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <map name="framesel">
+      <area shape="circle" coords="72,209,8" href="javascript:showframe(0)" />
+      <area shape="circle" coords="80,202,8" href="javascript:showframe(1)" />
+      <area shape="circle" coords="89,185,8" href="javascript:showframe(2)" />
+      <area shape="circle" coords="98,162,8" href="javascript:showframe(3)" />
+      <area shape="circle" coords="106,134,8" href="javascript:showframe(4)" />
+      <area shape="circle" coords="115,105,8" href="javascript:showframe(5)" />
+      <area shape="circle" coords="124,77,8" href="javascript:showframe(6)" />
+      <area shape="circle" coords="132,55,8" href="javascript:showframe(7)" />
+      <area shape="circle" coords="141,40,8" href="javascript:showframe(8)" />
+      <area shape="circle" coords="150,34,8" href="javascript:showframe(9)" />
+      <area shape="circle" coords="158,37,8" href="javascript:showframe(10)" />
+      <area shape="circle" coords="167,47,8" href="javascript:showframe(11)" />
+      <area shape="circle" coords="176,61,8" href="javascript:showframe(12)" />
+      <area shape="circle" coords="184,78,8" href="javascript:showframe(13)" />
+      <area shape="circle" coords="193,95,8" href="javascript:showframe(14)" />
+      <area shape="circle" coords="202,110,8" href="javascript:showframe(15)" />
+      <area shape="circle" coords="210,120,8" href="javascript:showframe(16)" />
+      <area shape="circle" coords="219,124,8" href="javascript:showframe(17)" />
+      <area shape="circle" coords="228,117,8" href="javascript:showframe(18)" />
+      <area shape="circle" coords="236,103,8" href="javascript:showframe(19)" />
+      <area shape="circle" coords="245,86,8" href="javascript:showframe(20)" />
+      <area shape="circle" coords="254,67,8" href="javascript:showframe(21)" />
+      <area shape="circle" coords="262,51,8" href="javascript:showframe(22)" />
+      <area shape="circle" coords="271,39,8" href="javascript:showframe(23)" />
+      <area shape="circle" coords="280,34,8" href="javascript:showframe(24)" />
+      <area shape="circle" coords="288,38,8" href="javascript:showframe(25)" />
+      <area shape="circle" coords="297,49,8" href="javascript:showframe(26)" />
+      <area shape="circle" coords="306,68,8" href="javascript:showframe(27)" />
+      <area shape="circle" coords="314,92,8" href="javascript:showframe(28)" />
+      <area shape="circle" coords="323,119,8" href="javascript:showframe(29)" />
+      <area shape="circle" coords="332,146,8" href="javascript:showframe(30)" />
+      <area shape="circle" coords="340,172,8" href="javascript:showframe(31)" />
+      <area shape="circle" coords="349,191,8" href="javascript:showframe(32)" />
+      <area shape="circle" coords="358,206,8" href="javascript:showframe(33)" />
+      <area shape="circle" coords="367,210,8" href="javascript:showframe(34)" />
+    </map>
 
+    <p>Aan beide uiteinden vinden we de stoel-vorm terug.<br /></p>
+    <form>
+      Dat er verschil is tussen conformatie 1 en nummer 35 zien we pas als we de
+      helft van de waterstof-atomen een
+      <input
+        type="button"
+        onclick="input_script(&#39;chchime&#39;,&#39;select atomno=7,atomno=9,atomno=11,atomno=14,atomno=15,atomno=17; color atoms red; select *&#39;)"
+        value="kleur"
+      />
+      geven. (Je kunt op de punten in de grafiek klikken om de betreffende
+      conformatie te krijgen.)
+    </form>
+    <br />
+    <img src="./question.gif" align="left" />
+    Die gekleurde helft is niet willekeurig gekozen. Kun je het verschil tussen
+    de rode en de witte set omschrijven? Bekijk het molecuul daartoe van
+    verschillende kanten.
+    <br />
 
+    Halverwege bevindt zich de twist-boot conformatie, als relatief stabiele
+    tussenvorm (frame nr. 18). Bekijk de animatie goed en probeer door het model
+    te draaien te zien welke vorm ontstaat.
+    <p></p>
+    <p></p>
+    <h4>Conclusie</h4>
+    <p>
+      De grotere ringen zijn dus wel flexibel, de ringen kunnen omklappen, maar
+      daarmee verandert <b>niet</b> de onderlinge orientatie van de groepen aan
+      de ring. Hierboven in cyclohexaan zit elke rode H <i>trans</i> ten
+      opzichte van de naburige rode, en dat blijven ze gedurende het
+      omklap-proces. We kunnen niet een cis-relatie omzetten in een
+      trans-relatie zonder een binding te breken!
+      <br />
+      Dit geeft aanleiding tot
+      <a href="./cistrans.html">cis/trans isomerie</a>.
+    </p>
+    <hr size="2" width="100%" align="Center" />
+    <br />
+    <center>
+      <table width="50%" border="0" cellspacing="2" cellpadding="2">
+        <tbody>
+          <tr valign="TOP">
+            <td align="RIGHT">
+              <a
+                href="./cyclo.html"
+                onmouseover="window.status=&#39;Vorige&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img
+                  src="./knoppen/knop_links.jpg"
+                  align="Absmiddle"
+                  border="0"
+              /></a>
+            </td>
 
+            <td align="RIGHT">
+              <a
+                href="./index.html"
+                onmouseover="window.status=&#39;index&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img src="./knoppen/info.gif" align="Absmiddle" border="0"
+              /></a>
+            </td>
 
+            <td>
+              <a
+                href="./cistrans.html"
+                onmouseover="window.status=&#39;Volgende&#39;; return true;"
+                onmouseout="window.status=&#39; &#39;; "
+              >
+                <img
+                  src="./knoppen/knop_rechts.jpg"
+                  align="Absmiddle"
+                  border="0"
+              /></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+    <br /><br /><br />
 
-<h3>3b. Cyclohexaan, stoel en boot</h3>
-<p>
-Nu gaan we eens kijken wat de verschijningsvormen van cylcohexaan zijn. 
-Het molecuul streeft naar de ideale hoek van 109,5º, en het blijkt dat met tetraeders een
-regelmatige zes-ring te vormen is. Meerdere zelfs; we zien hieronder de stoel- en de boot-vorm. <br>
-De stoel-vorm is het stabielste, omdat daarin ook nog alle bindingen alternerend staan. Je kunt dit controleren door het model zo te draaien dat je langs de C-C bindingen kijkt.<br>
-
-In de boot-vorm zul je enkele 'eclipsed' conformaties aantreffen.
-Daarom zal deze in zijn zuivere vorm nauwelijks voorkomen, maar bij
-voorkeur intern iets verdraaien ('twisten') tot de zogenaamde twist-boot-vorm.
-</p>
-<center>
-<table border="1" cellspacing="2" cellpadding="2">
-<tbody><tr valign="TOP">
-<td bgcolor="#AADDFF"><center><embed src="modellen/cyclohexaanboot.mol" frank="no" name="boot" display3d="ball&amp;stick" nomenus="true" script="zoom 200%; select hydrogen; spacefill 70; select *" width="250" height="200" bgcolor="#AADDFF"></center></td>
-<td bgcolor="#AADDFF"><center><embed src="modellen/cyclohexaanstoel.mol" frank="no" name="stoel" display3d="ball&amp;stick" nomenus="true" script="zoom 200%; select hydrogen; spacefill 70; select *" width="250" height="200" bgcolor="#AADDFF"></center></td>
-</tr>
-<tr valign="TOP">
-<td><center><img src="./stoel_files/bootje.jpg"></center></td>
-<td><center><img src="./stoel_files/stoeltje.jpg"></center></td>
-</tr>
-<tr valign="TOP">
-<td bgcolor="#AADDFF"><center><embed src="modellen/boot_z.mol" frank="no" name="boot" display3d="ball&amp;stick" nomenus="true" script="zoom 200%" width="250" height="200" bgcolor="#AADDFF"></center></td>
-<td bgcolor="#AADDFF"><center><embed src="modellen/stoel_z.mol" frank="no" name="stoel" display3d="ball&amp;stick" nomenus="true" script="zoom 200%" width="250" height="200" bgcolor="#AADDFF"></center></td>
-</tr>
-</tbody></table>
-</center>
-
-<h4>Twist-boot-vorm</h4>
-<p>
-De twist-boot-vorm komen we tegen bij het omklappen van de stoel-vorm.
-Als je de atomen zou nummeren, zou je zeer veel stoel-vormen van cyclohexaan kunnen maken, met één C 'omhoog', en die aan de overkant naar
-beneden. Dus: 1 omhoog, 4 naar beneden, of 2 omhoog, 5 naar beneden, of
-1 naar beneden en 4 omhoog, etc. Al deze vormen zijn energetisch equivalent en
-kunnen in elkaar overgaan volgens onderstaand proces:
-</p>
-
-
- <table border="0" width="100%">
-       <tbody><tr>
-       <td>
-      
-<img src="./stoel_files/chxinv.gif" name="enplot" border="no" usemap="#framesel">
-
-
-</td>
-
-
-       <td align="center">
-<script language="JavaScript">
-define_chime(window,'chchime','240','300','AnimFrameCallback=JSAnimcontrol','modellen/chxanim.xyz','wireframe 40;spacefill off;zoom 190;select *;set specular on;background [xFFFFFF];set picking distance;anim fps 1;anim frame next;animation off')
-</script><table border="0" cellspacing="0" cellpadding="0" height="240" width="300"><tbody><tr><td></td></tr></tbody></table>
-<form>
-achtergrond
-<input type="button" onclick="input_script(&#39;chchime&#39;,&#39;background [15,130,15]&#39;)" value="donker">
-<input type="button" onclick="input_script(&#39;chchime&#39;,&#39;background [153,255,153]&#39;)" value="licht"> 
-
-</form>
-</td></tr></tbody></table>
-
-
-
-<form name="display">
-<table width="100%">
-<tbody><tr><td align="center">	
-<input type="button" onclick="input_script(&#39;chchime&#39;,&#39;animation direction -1; anim frame next&#39;)" value="stap terug"> 
-
-
-<input type="button" onclick="input_script(&#39;chchime&#39;,&#39;animation direction 1; anim frame next&#39;)" value="stap vooruit">
- </td>
-<td align="center">	Animatie 
-<input type="button" onclick="input_script(&#39;chchime&#39;,&#39;animation on&#39;)" value="aan">
-<input type="button" onclick="input_script(&#39;chchime&#39;,&#39;animation off&#39;)" value="uit">
- </td>
- </tr>
-
-<tr>
-<td align="center" colspan="2">
-<textarea name="msg" rows="1" cols="40">===&gt;relatieve energie   0.11   kJ  stoel conformatie&lt;===1
-</textarea>
-</td></tr></tbody></table>
-</form>
-<map name="framesel">
-<area shape="circle" coords="72,209,8" href="javascript:showframe(0)">
-<area shape="circle" coords="80,202,8" href="javascript:showframe(1)">
-<area shape="circle" coords="89,185,8" href="javascript:showframe(2)">
-<area shape="circle" coords="98,162,8" href="javascript:showframe(3)">
-<area shape="circle" coords="106,134,8" href="javascript:showframe(4)">
-<area shape="circle" coords="115,105,8" href="javascript:showframe(5)">
-<area shape="circle" coords="124,77,8" href="javascript:showframe(6)">
-<area shape="circle" coords="132,55,8" href="javascript:showframe(7)">
-<area shape="circle" coords="141,40,8" href="javascript:showframe(8)">
-<area shape="circle" coords="150,34,8" href="javascript:showframe(9)">
-<area shape="circle" coords="158,37,8" href="javascript:showframe(10)">
-<area shape="circle" coords="167,47,8" href="javascript:showframe(11)">
-<area shape="circle" coords="176,61,8" href="javascript:showframe(12)">
-<area shape="circle" coords="184,78,8" href="javascript:showframe(13)">
-<area shape="circle" coords="193,95,8" href="javascript:showframe(14)">
-<area shape="circle" coords="202,110,8" href="javascript:showframe(15)">
-<area shape="circle" coords="210,120,8" href="javascript:showframe(16)">
-<area shape="circle" coords="219,124,8" href="javascript:showframe(17)">
-<area shape="circle" coords="228,117,8" href="javascript:showframe(18)">
-<area shape="circle" coords="236,103,8" href="javascript:showframe(19)">
-<area shape="circle" coords="245,86,8" href="javascript:showframe(20)">
-<area shape="circle" coords="254,67,8" href="javascript:showframe(21)">
-<area shape="circle" coords="262,51,8" href="javascript:showframe(22)">
-<area shape="circle" coords="271,39,8" href="javascript:showframe(23)">
-<area shape="circle" coords="280,34,8" href="javascript:showframe(24)">
-<area shape="circle" coords="288,38,8" href="javascript:showframe(25)">
-<area shape="circle" coords="297,49,8" href="javascript:showframe(26)">
-<area shape="circle" coords="306,68,8" href="javascript:showframe(27)">
-<area shape="circle" coords="314,92,8" href="javascript:showframe(28)">
-<area shape="circle" coords="323,119,8" href="javascript:showframe(29)">
-<area shape="circle" coords="332,146,8" href="javascript:showframe(30)">
-<area shape="circle" coords="340,172,8" href="javascript:showframe(31)">
-<area shape="circle" coords="349,191,8" href="javascript:showframe(32)">
-<area shape="circle" coords="358,206,8" href="javascript:showframe(33)">
-<area shape="circle" coords="367,210,8" href="javascript:showframe(34)">
-</map>
-
-<p>
-Aan beide uiteinden vinden we de stoel-vorm terug.<br>
-</p><form>
-Dat er verschil is tussen conformatie 1 en nummer 35 zien we pas als we
-de helft van de waterstof-atomen een 
-<input type="button" onclick="input_script(&#39;chchime&#39;,&#39;select atomno=7,atomno=9,atomno=11,atomno=14,atomno=15,atomno=17; color atoms red; select *&#39;)" value="kleur"> geven.
- 
-
-(Je kunt op de punten in de grafiek klikken om de betreffende conformatie te
-krijgen.)
-</form>
-<br>
-<img src="./stoel_files/question.gif" align="left">
-Die gekleurde helft is niet willekeurig gekozen.
-Kun je het verschil tussen de rode en de witte set omschrijven? Bekijk het molecuul daartoe van verschillende kanten.
-<br>
-
-Halverwege bevindt zich de twist-boot conformatie, als relatief stabiele 
-tussenvorm (frame nr. 18).
-Bekijk de animatie goed en probeer door het model te draaien te zien welke vorm ontstaat.
-<p></p>
-<p>
-</p><h4>Conclusie</h4>
-<p>
-De grotere ringen zijn dus wel flexibel, de ringen kunnen omklappen, maar
-daarmee verandert <b>niet</b> de onderlinge orientatie van de groepen aan de ring.
-Hierboven in cyclohexaan zit elke rode H <i>trans</i> ten opzichte van
-de naburige rode, en dat blijven ze gedurende het omklap-proces. We
-kunnen niet een cis-relatie omzetten in een trans-relatie zonder een binding
-te breken!
-<br>
-Dit geeft aanleiding tot <a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/cistrans.html">cis/trans isomerie</a>.
-</p>
-<hr size="2" width="100%" align="Center">
-<br>
-<center>
-<table width="50%" border="0" cellspacing="2" cellpadding="2">
-<tbody><tr valign="TOP">
-	<td align="RIGHT">	<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/cyclo.html" onmouseover="window.status=&#39;Vorige&#39;; return true;" onmouseout="window.status=&#39; &#39;; "> 
-				<img src="./stoel_files/knop_links.jpg" align="Absmiddle" border="0"></a></td>
-
-<td align="RIGHT">	<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/index.html" onmouseover="window.status=&#39;index&#39;; return true;" onmouseout="window.status=&#39; &#39;; "> 
-				<img src="./stoel_files/info.gif" align="Absmiddle" border="0"></a></td>
-
-	<td>			<a href="https://www3.cmbi.umcn.nl/wetche/vwo/stereo/cistrans.html" onmouseover="window.status=&#39;Volgende&#39;; return true;" onmouseout="window.status=&#39; &#39;; "> 
-				<img src="./stoel_files/knop_rechts.jpg" align="Absmiddle" border="0"></a></td>
-</tr></tbody></table></center>
-<br><br><br>
-
-
-<div id="ball" style="left: 77px; top: 1090px;"><img src="./stoel_files/redball.gif"></div>
- 
-
-
-</body><style id="stylish-2" class="stylish" type="text/css">.form-control {
-    width: 100% !important;
-}</style></html>
+    <div id="ball" style="left: 77px; top: 1090px">
+      <img src="./knoppen/redball.gif" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,525 @@
+<!-- saved from url=(0056)https://www3.cmbi.umcn.nl/wetche/vwo/stereo/diclrot.html -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title>dichloorethaan rotatie</title>
+    <style type="text/css">
+      #ball {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      BODY {
+        font-family: Comic Sans MS, sans-serif;
+        background: white;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      P {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      TD {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      UL {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      OL {
+        font-family: Comic Sans MS, sans-serif;
+      }
+      H2 {
+        font-family: Comic Sans MS, sans-serif;
+        color: green;
+      }
+      H3 {
+        font-family: Comic Sans MS, sans-serif;
+        color: green;
+      }
+      H4 {
+        font-family: Comic Sans MS, sans-serif;
+        color: green;
+      }
+      H5 {
+        font-family: Comic Sans MS, sans-serif;
+        color: red;
+      }
+    </style>
+    <script src="./dclrot_files/moiscript.js" language="JavaScript"></script>
+    <script language="JavaScript">
+      //array for energies and reaction coordinates
+      data = new Array();
+      data[0] = "rel. energie 16.84  kJ   R.C. = 0 graden";
+      data[1] = "rel. energie 16.15  kJ   R.C. = 10 graden";
+      data[2] = "rel. energie 14.19  kJ   R.C. = 20 graden";
+      data[3] = "rel. energie 11.39  kJ   R.C. = 30 graden";
+      data[4] = "rel. energie 8.31   kJ   R.C. = 40 graden";
+      data[5] = "rel. energie 5.68   kJ   R.C. = 50 graden";
+      data[6] = "rel. energie 3.81   kJ   R.C. = 60 graden";
+      data[7] = "rel. energie 3.2    kJ   R.C. = 70 graden";
+      data[8] = "rel. energie 3.45   kJ   R.C. = 80 graden";
+      data[9] = "rel. energie 4.4    kJ   R.C. = 90 graden";
+      data[10] = "rel. energie 5.62   kJ   R.C. = 100 graden";
+      data[11] = "rel. energie 6.6    kJ   R.C. = 110 graden";
+      data[12] = "rel. energie 6.96   kJ   R.C. = 120 graden";
+      data[13] = "rel. energie 6.49   kJ   R.C. = 130 graden";
+      data[14] = "rel. energie 5.23   kJ   R.C. = 140 graden";
+      data[15] = "rel. energie 3.52   kJ   R.C. = 150 graden";
+      data[16] = "rel. energie 1.77   kJ   R.C. = 160 graden";
+      data[17] = "rel. energie 0.47   kJ   R.C. = 170 graden";
+      data[18] = "rel. energie 0      kJ   R.C. = 180 graden";
+      data[19] = "rel. energie 0.48   kJ   R.C. = 190 graden";
+      data[20] = "rel. energie 1.77   kJ   R.C. = 200 graden";
+      data[21] = "rel. energie 3.51   kJ   R.C. = 210 graden";
+      data[22] = "rel. energie 5.23   kJ   R.C. = 220 graden";
+      data[23] = "rel. energie 6.52   kJ   R.C. = 230 graden";
+      data[24] = "rel. energie 6.97   kJ   R.C. = 240 graden";
+      data[25] = "rel. energie 6.64   kJ   R.C. = 250 graden";
+      data[26] = "rel. energie 5.62   kJ   R.C. = 260 graden";
+      data[27] = "rel. energie 4.44   kJ   R.C. = 270 graden";
+      data[28] = "rel. energie 3.47   kJ   R.C. = 280 graden";
+      data[29] = "rel. energie 3.17   kJ   R.C. = 290 graden";
+      data[30] = "rel. energie 3.91   kJ   R.C. = 300 graden";
+      data[31] = "rel. energie 5.61   kJ   R.C. = 310 graden";
+      data[32] = "rel. energie 8.33   kJ   R.C. = 320 graden";
+      data[33] = "rel. energie 11.38  kJ   R.C. = 330 graden";
+      data[34] = "rel. energie 14.2   kJ   R.C. = 340 graden";
+      data[35] = "rel. energie 16.13  kJ   R.C. = 350 graden";
+      data[36] = "rel. energie 16.84  kJ   R.C. = 360 graden";
+      message = "geometry";
+      buttonname = "frame";
+      data[37] = "";
+      data[38] = "";
+
+      coordx = new Array();
+      coordx[0] = 37;
+      coordx[1] = 44;
+      coordx[2] = 64;
+      coordx[3] = 93;
+      coordx[4] = 124;
+      coordx[5] = 151;
+      coordx[6] = 170;
+      coordx[7] = 177;
+      coordx[8] = 174;
+      coordx[9] = 164;
+      coordx[10] = 152;
+      coordx[11] = 142;
+      coordx[12] = 138;
+      coordx[13] = 143;
+      coordx[14] = 156;
+      coordx[15] = 173;
+      coordx[16] = 191;
+      coordx[17] = 205;
+      coordx[18] = 210;
+      coordx[19] = 205;
+      coordx[20] = 191;
+      coordx[21] = 174;
+      coordx[22] = 156;
+      coordx[23] = 143;
+      coordx[24] = 138;
+      coordx[25] = 141;
+      coordx[26] = 152;
+      coordx[27] = 164;
+      coordx[28] = 174;
+      coordx[29] = 177;
+      coordx[30] = 169;
+      coordx[31] = 152;
+      coordx[32] = 124;
+      coordx[33] = 93;
+      coordx[34] = 64;
+      coordx[35] = 44;
+      coordx[36] = 37;
+      coordy = new Array();
+      coordy[0] = 72;
+      coordy[1] = 80;
+      coordy[2] = 88;
+      coordy[3] = 96;
+      coordy[4] = 104;
+      coordy[5] = 112;
+      coordy[6] = 121;
+      coordy[7] = 129;
+      coordy[8] = 137;
+      coordy[9] = 145;
+      coordy[10] = 153;
+      coordy[11] = 162;
+      coordy[12] = 170;
+      coordy[13] = 178;
+      coordy[14] = 186;
+      coordy[15] = 194;
+      coordy[16] = 203;
+      coordy[17] = 211;
+      coordy[18] = 219;
+      coordy[19] = 227;
+      coordy[20] = 235;
+      coordy[21] = 244;
+      coordy[22] = 252;
+      coordy[23] = 260;
+      coordy[24] = 268;
+      coordy[25] = 276;
+      coordy[26] = 285;
+      coordy[27] = 293;
+      coordy[28] = 301;
+      coordy[29] = 309;
+      coordy[30] = 317;
+      coordy[31] = 326;
+      coordy[32] = 334;
+      coordy[33] = 342;
+      coordy[34] = 350;
+      coordy[35] = 358;
+      coordy[36] = 367;
+
+      function initialize() {
+        initdivs();
+        divanchor("enplot");
+        divmove("ball", coordy[0] - 8, coordx[0] - 8);
+        init_chime();
+      }
+
+      function JSAnimcontrol(PlugName, FrameNo) {
+        //reset the value of the text area:
+
+        document.pleo.messageboard.value = FrameNo + 1 + ": " + data[FrameNo];
+        divmove("ball", coordy[FrameNo] - 5, coordx[FrameNo] - 8);
+      }
+      function showframe(framenr) {
+        commandstring = "anim frame " + framenr;
+        input_script("chime", commandstring);
+      }
+    </script>
+  </head>
+  <body bgcolor="#FFFFFF" onload="initialize()">
+    <center>
+      <h3>Rotatie in 1,2-dichloorethaan</h3>
+
+      <h4>Deze animatie bestaat uit 37 conformaties (<i>frames</i>).</h4>
+
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td>
+              <script language="JavaScript">
+                define_chime(
+                  window,
+                  "chime",
+                  "300",
+                  "300",
+                  "AnimFrameCallback=JSAnimcontrol",
+                  "modellen/diclrot.xyz",
+                  "wireframe 40;spacefill 120;zoom 190;select *;set specular on;select hydrogen; spacefill 70; select *;background [xFFFFFF];anim fps 1;anim frame next;animation off"
+                );
+              </script>
+              <table
+                border="0"
+                cellspacing="0"
+                cellpadding="0"
+                height="300"
+                width="300"
+              >
+                <tbody>
+                  <tr>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td width="385">
+              <img
+                src="./modellen/diclplot.gif"
+                name="enplot"
+                border="no"
+                usemap="#framesel"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <map name="framesel">
+        <area shape="circle" coords="72,37,8" href="javascript:showframe(0)" />
+        <area shape="circle" coords="80,44,8" href="javascript:showframe(1)" />
+        <area shape="circle" coords="88,64,8" href="javascript:showframe(2)" />
+        <area shape="circle" coords="96,93,8" href="javascript:showframe(3)" />
+        <area
+          shape="circle"
+          coords="104,124,8"
+          href="javascript:showframe(4)"
+        />
+        <area
+          shape="circle"
+          coords="112,151,8"
+          href="javascript:showframe(5)"
+        />
+        <area
+          shape="circle"
+          coords="121,170,8"
+          href="javascript:showframe(6)"
+        />
+        <area
+          shape="circle"
+          coords="129,177,8"
+          href="javascript:showframe(7)"
+        />
+        <area
+          shape="circle"
+          coords="137,174,8"
+          href="javascript:showframe(8)"
+        />
+        <area
+          shape="circle"
+          coords="145,164,8"
+          href="javascript:showframe(9)"
+        />
+        <area
+          shape="circle"
+          coords="153,152,8"
+          href="javascript:showframe(10)"
+        />
+        <area
+          shape="circle"
+          coords="162,142,8"
+          href="javascript:showframe(11)"
+        />
+        <area
+          shape="circle"
+          coords="170,138,8"
+          href="javascript:showframe(12)"
+        />
+        <area
+          shape="circle"
+          coords="178,143,8"
+          href="javascript:showframe(13)"
+        />
+        <area
+          shape="circle"
+          coords="186,156,8"
+          href="javascript:showframe(14)"
+        />
+        <area
+          shape="circle"
+          coords="194,173,8"
+          href="javascript:showframe(15)"
+        />
+        <area
+          shape="circle"
+          coords="203,191,8"
+          href="javascript:showframe(16)"
+        />
+        <area
+          shape="circle"
+          coords="211,205,8"
+          href="javascript:showframe(17)"
+        />
+        <area
+          shape="circle"
+          coords="219,210,8"
+          href="javascript:showframe(18)"
+        />
+        <area
+          shape="circle"
+          coords="227,205,8"
+          href="javascript:showframe(19)"
+        />
+        <area
+          shape="circle"
+          coords="235,191,8"
+          href="javascript:showframe(20)"
+        />
+        <area
+          shape="circle"
+          coords="244,174,8"
+          href="javascript:showframe(21)"
+        />
+        <area
+          shape="circle"
+          coords="252,156,8"
+          href="javascript:showframe(22)"
+        />
+        <area
+          shape="circle"
+          coords="260,143,8"
+          href="javascript:showframe(23)"
+        />
+        <area
+          shape="circle"
+          coords="268,138,8"
+          href="javascript:showframe(24)"
+        />
+        <area
+          shape="circle"
+          coords="276,141,8"
+          href="javascript:showframe(25)"
+        />
+        <area
+          shape="circle"
+          coords="285,152,8"
+          href="javascript:showframe(26)"
+        />
+        <area
+          shape="circle"
+          coords="293,164,8"
+          href="javascript:showframe(27)"
+        />
+        <area
+          shape="circle"
+          coords="301,174,8"
+          href="javascript:showframe(28)"
+        />
+        <area
+          shape="circle"
+          coords="309,177,8"
+          href="javascript:showframe(29)"
+        />
+        <area
+          shape="circle"
+          coords="317,169,8"
+          href="javascript:showframe(30)"
+        />
+        <area
+          shape="circle"
+          coords="326,152,8"
+          href="javascript:showframe(31)"
+        />
+        <area
+          shape="circle"
+          coords="334,124,8"
+          href="javascript:showframe(32)"
+        />
+        <area
+          shape="circle"
+          coords="342,93,8"
+          href="javascript:showframe(33)"
+        />
+        <area
+          shape="circle"
+          coords="350,64,8"
+          href="javascript:showframe(34)"
+        />
+        <area
+          shape="circle"
+          coords="358,44,8"
+          href="javascript:showframe(35)"
+        />
+        <area
+          shape="circle"
+          coords="367,37,8"
+          href="javascript:showframe(36)"
+        />
+      </map>
+      <br /><br />
+      <form name="display">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td align="center">
+                <input
+                  type="button"
+                  onclick="input_script(&#39;chime&#39;,&#39;animation direction -1; anim frame next&#39;)"
+                  value="stap terug"
+                />
+
+                <input
+                  type="button"
+                  onclick="input_script(&#39;chime&#39;,&#39;animation direction 1; anim frame next&#39;)"
+                  value="stap vooruit"
+                />
+              </td>
+              <td align="center">
+                Animatie
+                <input
+                  type="button"
+                  onclick="input_script(&#39;chime&#39;,&#39;animation on&#39;)"
+                  value="aan"
+                />
+                <input
+                  type="button"
+                  onclick="input_script(&#39;chime&#39;,&#39;animation off&#39;)"
+                  value="uit"
+                />
+              </td>
+              <td>
+                achtergrond
+                <input
+                  type="button"
+                  onclick="input_script(&#39;chime&#39;,&#39;background [51,51,51]&#39;)"
+                  value="donker"
+                />
+                <input
+                  type="button"
+                  onclick="input_script(&#39;chime&#39;,&#39;background [255,255,204]&#39;)"
+                  value="licht"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <center>
+          <form name="pleo">
+            <input
+              name="messageboard"
+              size="55"
+              value="1: rel. energie 16.84  kJ   R.C. = 0 graden"
+            />
+          </form>
+        </center>
+        <p>
+          De chloor-atomen zitten het liefst zo ver mogelijk van elkaar af (in
+          een <i>anti</i>-positie, zie frame #19), en draaien wat moeilijker
+          langs elkaar dan twee H atomen, maar de drie minima blijven in elkaar
+          overgaan.<br />
+          Bedenk dat butaan hetzelfde patroon zal vertonen, want de methyl-groep
+          is ongeveer net zo groot als een chloor-atoom.
+        </p>
+        <p>
+          R.C. betekent reactie-co&ouml;rdinaat, in dit geval de waarde van een
+          draaihoek die de conformatie-verandering beschrijft.<br />
+          <!-- Dit soort berekeningen kun je zelf uitvoeren via een
+          <a href="http://www.cmbi.kun.nl/wetche/vwo/stereo/editnl.html"
+            >web pagina
+            <img
+              src="./dclrot_files/www1.gif"
+              border="no"
+              width="30"
+              height="30"
+          /></a>
+          bij het CMBI aan de K.U. Nijmegen. Daarop staat (in dit geval, er zijn
+          ook andere opties) de ethaan structuur, waarin je twee of meer H
+          atomen kunt vervangen door andere groepen uit een menuutje. Met een
+          druk op de knop wordt de berekening gedaan en het resultaat verschijnt
+          op een nieuwe pagina, ongeveer zoals hierboven. <br /> -->
+          <img src="./question.gif" align="left" />
+          Vraag: in het eerste minimum, bij conformatienr. 8, is de Cl-C-C-Cl
+          torsiehoek 70&deg;, en niet 60&deg; zoals de 'staggered' conformatie
+          in ethaan. Hoe zou dat komen?
+        </p>
+        <p>
+          Terug naar
+          <a href="./draaieth.html">ethaan draaien</a>.
+        </p>
+        <hr />
+        <br />
+        <center>
+          <table width="20%" border="0" cellspacing="2" cellpadding="2">
+            <tbody>
+              <tr valign="TOP">
+                <td align="RIGHT">
+                  <a
+                    href="./index.html"
+                    onmouseover="window.status=&#39;index&#39;; return true;"
+                    onmouseout="window.status=&#39; &#39;; "
+                  >
+                    <img
+                      src="./knoppen/info.gif"
+                      align="Absmiddle"
+                      border="0"
+                  /></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </center>
+        <div id="ball" style="left: 373px; top: 156px">
+          <img src="./knoppen/redball.gif" />
+        </div>
+      </form>
+    </center>
+  </body>
+</html>
