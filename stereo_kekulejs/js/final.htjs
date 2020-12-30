@@ -1,0 +1,97 @@
+score = 0 ;
+attemp = 0 ;
+
+function kies()
+{
+
+			ansstring = "maak selectie";
+			test = "";
+			teller = 0 ;
+			if (document.ques1.elements[0].checked)  
+			{
+			test = test + "1";
+			}
+			else
+			{
+			test = test + "0";
+			}
+			if (document.ques2.elements[1].checked)  
+			{
+			test = test + "1";
+			}
+			else
+			{
+			test = test + "0";
+			}
+			if (document.ques3.elements[0].checked)  
+			{
+			test = test + "1";
+			}
+			else
+			{
+			test = test + "0";
+			}
+			if (document.ques4.elements[1].checked)  
+			{
+			test = test + "1";
+			}
+			else
+			{
+			test = test + "0";
+			}
+			if (document.ques5.elements[2].checked)  
+			{
+			test = test + "1";
+			}
+			else
+			{
+			test = test + "0";
+			}
+			if (document.ques6.elements[0].checked)  
+			{
+			test = test + "1";
+			}
+			else
+			{
+			test = test + "0";
+			}
+			if (document.ques7.elements[2].checked)  
+			{
+			test = test + "1";
+			}
+			else
+			{
+			test = test + "0";
+			}
+					
+			for ( i=0; i<7; i++)
+			{ 
+				
+		 		teken = test.charAt(i);
+				if (teken != 1 )
+				{
+				teller++;
+				}
+			}
+
+			if (teller == '0')
+				{
+				reactie = "Ja! Goed gedaan, geslaagd voor de test.";
+				attemp++;
+				}
+				else
+				{
+					if (teller == 7 )
+					{
+						reactie = "Alles fout! Te vroeg gedrukt? "
+					}
+					else
+					{
+					reactie =  "Nog niet helemaal goed.\nEr zitten nog " + teller + " foutjes in";
+					}
+				score++;
+				attemp++;
+				}
+  			document.react.tekst.value = reactie ;	
+  			document.score.bord.value = "Dit was poging " + attemp ;			
+}

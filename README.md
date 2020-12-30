@@ -11,13 +11,15 @@ Naar het werk van [Hens Borkent](mailto:borkent@cmbi.kun.nl). Vooralsnog zonder 
 Er is van alles te doen om dit te updaten. Grote stappen zijn:
   - [ ] Opmaak
   - [ ] HTML
-  - [ ] Statisch laden moleculen
+  - [x] Statisch laden moleculen (mol-bestanden)
+  - [ ] Statisch laden moleculen (xyz-bestanden)
   - [ ] Dynamisch (onclick) laden moleculen
   - [ ] Moleculen dynamisch maken (autorotate etc.)
   - [ ] Energie-conformatie koppelen
   - [ ] Energie-reactiecoordinaat koppelen
   - [ ] Quiz implementeren 
   - [ ] 'Extra' pagina's
+  - [ ] Bugs
 
   - [x] 1. Ruimtelijke structuren
   - [x] a. Methaan, tetraeder
@@ -33,9 +35,9 @@ Er is van alles te doen om dit te updaten. Grote stappen zijn:
   - [x] a. Cycloalkanen
   - [x] b. Cyclohexaan, stoel en boot
   - [x] c. Cis en trans
-  - [ ] 4. Optische isomerie
+  - [x] 4. Optische isomerie
   - [x] a. 1 asymmetrisch C atoom
   - [x] b. 2 asymmetrische centra
-  - [ ] c. Optische activiteit
-  - [ ] d. Substitutie mechanismen
-  - [ ] 5. Een testje
+  - [x] c. Optische activiteit
+  - [x] d. Substitutie mechanismen
+  - [x] 5. Een testje

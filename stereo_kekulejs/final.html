@@ -1,0 +1,241 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>StereoQuiz</title>
+
+    <style type="text/css">
+        BODY {
+            font-family: Comic Sans MS, sans-serif;
+            background: white;
+            margin-left: 10px;
+            margin-right: 10px
+        }
+
+        P {
+            font-family: Comic Sans MS, sans-serif
+        }
+
+        TD {
+            font-family: Comic Sans MS, sans-serif
+        }
+
+        UL {
+            font-family: Comic Sans MS, sans-serif
+        }
+
+        OL {
+            font-family: Comic Sans MS, sans-serif
+        }
+
+        H2 {
+            font-family: Comic Sans MS, sans-serif;
+            color: orange
+        }
+
+        H3 {
+            font-family: Comic Sans MS, sans-serif;
+            color: blue
+        }
+
+        H4 {
+            font-family: Comic Sans MS, sans-serif;
+            color: green
+        }
+
+        H5 {
+            font-family: Comic Sans MS, sans-serif;
+            color: red
+        }
+
+        TEXTAREA {
+            font-family: Comic Sans MS, sans-serif;
+            color: red
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./css/themes/default/kekule.css" />
+    <script src="./js/three.min.js"></script>
+    <script src="./js/raphael.min.js"></script>
+    <script src="./js/kekule/kekule.min.js"></script>
+    <script src="./js/final.htjs"></script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+    <h3>Doe de stereo-test!</h3>
+    <p>
+
+        Atoomkleuren: grijs=koolstof, wit=waterstof, groen=chloor
+
+
+    <table width="100%">
+
+        <tbody>
+            <tr>
+                <td bgcolor="#FFFFCC">
+                    <form name="ques1">
+                        1. Zal de verbinding hiernaast optisch actief zijn?<br>
+                        <input type="radio" name="q1" value="0">Nee, geen asymmetrisch C-atoom<br>
+                        <input type="radio" name="q1" value="1">Ja, wel asymmetrisch C-atoom<br>
+                    </form>
+                </td>
+                <td bgcolor="#FFFFCC">
+                    <span style="display: block; width: 400px; height: 300px" data-widget="Kekule.ChemWidget.Viewer3D"
+                        data-chem-obj="url(./modellen/3mepentaan.xyz)" data-predefined-setting="basic"
+                        data-caption="3mepentaan"></span>
+                    <!-- <embed src="modellen/3mepentaan.xyz" name="graph1" options3d="specular" frank="no"
+                        script="zoom 160; select hydrogen; spacefill 70;select chlorine; spacefill 110;select carbon; spacefill 100; wireframe 30; select *; wireframe 30;rotate y 35"
+                        height="300" width="400" bgcolor="#FFFFCC"> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#FFFF99">
+                    <form name="ques2">
+                        2. En deze?<br>
+                        <input type="radio" name="q2" value="0">Nee, geen asymmetrisch C-atoom<br>
+                        <input type="radio" name="q2" value="1">Ja, wel asymmetrisch C-atoom<br>
+                    </form>
+                </td>
+                <td bgcolor="#FFFF99">
+                    <span style="display: block; width: 400px; height: 300px" data-widget="Kekule.ChemWidget.Viewer3D"
+                        data-chem-obj="url(./modellen/r3mehexaan.xyz)" data-predefined-setting="basic"
+                        data-caption="r3mehexaan"></span>
+                    <!-- <embed src="modellen/r3mehexaan.xyz" name="graph2" options3d="specular" frank="no"
+                        script="zoom 160; select hydrogen; spacefill 70;select chlorine; spacefill 110;select carbon; spacefill 100; wireframe 30; select *; wireframe 30;rotate y 100; rotate x 75"
+                        height="300" width="400" bgcolor="#FFFF99"> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#FFFFcc">
+                    <form name="ques3">
+                        3. Is deze verbinding dezelfde als in vraag 2?<br>
+                        <input type="radio" name="q3" value="0">Ja, ze zijn identiek<br>
+                        <input type="radio" name="q3" value="1">Nee, ze zijn elkaars spiegelbeeld<br>
+                        <input type="radio" name="q3" value="2">Nee, het zijn geen isomeren<br>
+                    </form>
+                </td>
+                <td bgcolor="#FFFFcc">
+                    <span style="display: block; width: 400px; height: 300px" data-widget="Kekule.ChemWidget.Viewer3D"
+                        data-chem-obj="url(./modellen/copie.xyz)" data-predefined-setting="basic"
+                        data-caption="copie"></span>
+                    <!-- <embed src="modellen/copie.xyz" name="graph3" options3d="specular" frank="no"
+                        script="zoom 160; select hydrogen; spacefill 70;select chlorine; spacefill 110;select carbon; spacefill 100; wireframe 30; select *; wireframe 30; rotate x 50; rotate y 70; rotate z 120"
+                        height="300" width="400" bgcolor="#FFFFcc"> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#FFFF99">
+                    <form name="ques4">
+                        4. Is in deze verbinding cis/trans isomerie mogelijk??<br>
+                        <input type="radio" name="q4" value="0">Nee, omdat je de ring kunt omdraaien<br>
+                        <input type="radio" name="q4" value="1">Nee, omdat er geen twee C-atomen zijn met verschillende
+                        atomen eraan.<br>
+                        <input type="radio" name="q4" value="2">Ja, door een Cl en H te verwisselen
+                    </form>
+                </td>
+                <td bgcolor="#FFFF99">
+                    <span style="display: block; width: 400px; height: 300px" data-widget="Kekule.ChemWidget.Viewer3D"
+                        data-chem-obj="url(./modellen/dubbel.mol)" data-predefined-setting="basic"
+                        data-caption="dubbel"></span>
+                    <!-- <embed src="modellen/dubbel.mol" name="graph4" options3d="specular" frank="no"
+                        script="zoom 160; select hydrogen; spacefill 70;select chlorine; spacefill 110;select carbon; spacefill 100; wireframe 30; select *; wireframe 30"
+                        height="300" width="400" bgcolor="#FFFF99"> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#FFFFcc">
+                    <form name="ques5">
+                        5. Is deze verbinding dezelfde als in vraag 4?<br>
+                        <input type="radio" name="q5" value="0">Ja, ze zijn identiek<br>
+                        <input type="radio" name="q5" value="1">Nee, het is een cis-trans isomeer<br>
+                        <input type="radio" name="q5" value="2">Nee, het is een positionele isomeer<br>
+                        <input type="radio" name="q5" value="3">Nee, het is helemaal geen isomeer
+                    </form>
+                </td>
+                <td bgcolor="#FFFFcc">
+                    <span style="display: block; width: 400px; height: 300px" data-widget="Kekule.ChemWidget.Viewer3D"
+                        data-chem-obj="url(./modellen/trans.mol)" data-predefined-setting="basic"
+                        data-caption="trans"></span>
+                    <!-- <embed src="modellen/trans.mol" name="graph5" options3d="specular" frank="no"
+                        script="zoom 160; select hydrogen; spacefill 70;select chlorine; spacefill 110;select carbon; spacefill 100; wireframe 30; select *; wireframe 30; rotate x 50; rotate y 70; rotate z 120"
+                        height="300" width="400" bgcolor="#FFFFcc"> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#FFFF99">
+                    <form name="ques6">
+                        6. Is dit molecuul asymmetrisch (chiraal, optisch actief)?<br>
+                        <input type="radio" name="q6" value="0">Nee, geen asymmetrisch C-atoom<br>
+                        <input type="radio" name="q6" value="1">Ja, wel asymmetrisch C-atoom<br>
+                    </form>
+                </td>
+                <td bgcolor="#FFFF99">
+                    <span style="display: block; width: 400px; height: 300px" data-widget="Kekule.ChemWidget.Viewer3D"
+                        data-chem-obj="url(./modellen/2mehex1.xyz)" data-predefined-setting="basic"
+                        data-caption="2mehex1"></span>
+                    <!-- <embed src="modellen/2mehex1.xyz" name="graph6" options3d="specular" frank="no"
+                        script="zoom 160; select hydrogen; spacefill 70;select chlorine; spacefill 110;select carbon; spacefill 100; wireframe 30; select *; wireframe 30"
+                        height="300" width="400" bgcolor="#FFFF99"> -->
+                </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#FFFFcc">
+                    <form name="ques7">
+                        7. Is deze verbinding dezelfde als in vraag 6?<br>
+                        <input type="radio" name="q7" value="0">Ja, ze zijn identiek<br>
+                        <input type="radio" name="q7" value="1">Nee, ze zijn elkaars spiegelbeeld<br>
+                        <input type="radio" name="q7" value="2">Nee, het zijn verschillende stoffen<br>
+                    </form>
+                </td>
+                <td bgcolor="#FFFFcc">
+                    <span style="display: block; width: 400px; height: 300px" data-widget="Kekule.ChemWidget.Viewer3D"
+                        data-chem-obj="url(./modellen/mehex3.xyz)" data-predefined-setting="basic"
+                        data-caption="mehex3"></span>
+                    <!-- <embed src="modellen/mehex3.xyz" name="graph7" options3d="specular" frank="no"
+                        script="zoom 160; select hydrogen; spacefill 70;select chlorine; spacefill 110;select carbon; spacefill 100; wireframe 30; select *; wireframe 30; rotate x 50; rotate y 70; rotate z 120"
+                        height="300" width="400" bgcolor="#FFFFcc"> -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Klaar? Klik dan
+                    <form name="check">
+                        <input type="button" value=" hier " name="answer" onclick="kies()"> om je antwoorden te
+                        controleren.
+                    </form>
+                </td>
+                <td>
+                    <form name="react">
+                        <textarea cols="40" rows="6" name="tekst" value=" " onfocus="blur()" wrap="soft"></textarea>
+                    </form>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    </p>
+    <hr>
+
+    <form name="score">
+        <center>
+            Score:
+            <textarea cols="30" rows="1" name="bord" value=" " onfocus="blur()" wrap="soft"></textarea>
+        </center>
+    </form>
+    <hr>
+    <center>
+        <a href="./index.html"
+            onmouseover="window.status=&#39;Volgende&#39;; return true;" onmouseout="window.status=&#39; &#39;; ">
+            <img src="./knoppen/knop_rechts.jpg" border="0"></a>
+    </center>
+
+
+</body>
+
+</html>
