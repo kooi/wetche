@@ -1,57 +1,79 @@
 <html>
-  <head>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./css/themes/default/kekule.css"
-    />
-    <script src="./js/three.min.js"></script>
-    <script src="./js/raphael.min.js"></script>
-    <script src="./js/kekule/kekule.min.js"></script>
-  </head>
-  <body>
-    <span
-      style="display: block; width: 250px; height: 200px"
-      data-widget="Kekule.ChemWidget.Viewer3D"
-      data-chem-obj="url(./modellen/cyclopropaan.mol)"
-      data-predefined-setting="basic"
-      data-caption="cyclopropaan"
-    ></span>
 
-    <center>
-      <table width="50%" border="0" cellspacing="2" cellpadding="2">
-        <tr valign="TOP">
-          <td align="RIGHT">
-            <a
-              href="draaieth.html"
-              onMouseOver="window.status='Vorige'; return true;"
-              onMouseOut="window.status=' '; "
-            >
-              <img src="knoppen/knop_links.jpg" align="Absmiddle" border="0"
-            /></a>
-          </td>
+<head>
+  <link rel="stylesheet" type="text/css" href="./css/themes/default/kekule.css" />
+  <script src="./js/three.min.js"></script>
+  <script src="./js/raphael.min.js"></script>
+  <script src="./js/kekule/kekule.min.js"></script>
+</head>
 
-          <td align="RIGHT">
-            <a
-              href="index.html"
-              onMouseOver="window.status='index'; return true;"
-              onMouseOut="window.status=' '; "
-            >
-              <img src="knoppen/info.gif" align="Absmiddle" border="0"
-            /></a>
-          </td>
-          <td>
-            <a
-              href="cyclo.html"
-              onMouseOver="window.status='Volgende'; return true;"
-              onMouseOut="window.status=' '; "
-            >
-              <img src="knoppen/knop_rechts.jpg" align="Absmiddle" border="0"
-            /></a>
-          </td>
-        </tr>
-      </table>
-    </center>
-    
-  </body>
+<body>
+  <span style="display: block; width: 250px; height: 200px" data-widget="Kekule.ChemWidget.Viewer3D"
+    data-chem-obj="url(./modellen/cyclopropaan.mol)" data-predefined-setting="basic" data-caption="cyclopropaan"></span>
+
+  <div id="./modellen/2-butyn.mol" class="molView" data-widget="Kekule.ChemWidget.Viewer3D"></div>
+  <div id="./modellen/2-propeen.mol" class="molView" data-widget="Kekule.ChemWidget.Viewer3D"></div>
+  <div id="./modellen/2mehex1.xyz" class="molView" data-widget="Kekule.ChemWidget.Viewer3D"></div>
+
+  <center>
+    <table width="50%" border="0" cellspacing="2" cellpadding="2">
+      <tr valign="TOP">
+        <td align="RIGHT">
+          <a href="draaieth.html" onMouseOver="window.status='Vorige'; return true;" onMouseOut="window.status=' '; ">
+            <img src="knoppen/knop_links.jpg" align="Absmiddle" border="0" /></a>
+        </td>
+
+        <td align="RIGHT">
+          <a href="index.html" onMouseOver="window.status='index'; return true;" onMouseOut="window.status=' '; ">
+            <img src="knoppen/info.gif" align="Absmiddle" border="0" /></a>
+        </td>
+        <td>
+          <a href="cyclo.html" onMouseOver="window.status='Volgende'; return true;" onMouseOut="window.status=' '; ">
+            <img src="knoppen/knop_rechts.jpg" align="Absmiddle" border="0" /></a>
+        </td>
+      </tr>
+    </table>
+  </center>
+
+</body>
+<script>
+  window.addEventListener('load', (event) => {
+    Kekule.OpenBabel.enable(function (err) {
+      if (!err) {
+        molecules = document.getElementsByClassName('molView');
+        // console.log(molecules);
+        for (i in molecules) {
+          if (molecules[i].id) {
+            // console.log(molecules[i].id);
+            // console.log(molecules[i].id.split('.').pop());
+            // t = molecules[i].id.split('.').pop();
+            // if (t == 'mol') {
+            loadMoleculeFromURLToDiv(molecules[i].id);
+            // } else if (t == 'xyz') {
+            //   Kekule.IO.loadResourceData('url(#molResExternalLink)', function (mol, success) {
+            //     if (success) {
+            //       Kekule.Widget.getWidgetById(molecules[i].id).setChemObj(mol);
+            //     }
+            //   });
+            // }
+          }
+        }
+      }
+    });
+  });
+
+  function loadMoleculeFromURLToDiv(url) {
+    Kekule.IO.loadUrlData(url, function (mol, success) {
+      if (success) {
+        console.log('Loading from ' + url + ' Successful');
+        Kekule.Widget.getWidgetById(url).setChemObj(mol);
+      }
+      else {
+        console.log('Loading from ' + url + ' Failed');
+      }
+    });
+
+  }
+</script>
+
 </html>

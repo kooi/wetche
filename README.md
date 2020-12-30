@@ -8,19 +8,21 @@ Naar het werk van [Hens Borkent](mailto:borkent@cmbi.kun.nl). Vooralsnog zonder 
 
 ## TODO
 
-Er is van alles te doen om dit te updaten. Grote stappen zijn:
+Er is van alles te doen om dit te updaten.
+Grote stappen zijn:
   - [ ] Opmaak
   - [ ] HTML
   - [x] Statisch laden moleculen (mol-bestanden)
   - [ ] Statisch laden moleculen (xyz-bestanden)
   - [ ] Dynamisch (onclick) laden moleculen
-  - [ ] Moleculen dynamisch maken (autorotate etc.)
+  - [ ] Animaties van moleculen (autorotate, reactiestappen etc.)
   - [ ] Energie-conformatie koppelen
   - [ ] Energie-reactiecoordinaat koppelen
   - [ ] Quiz implementeren 
   - [ ] 'Extra' pagina's
   - [ ] Bugs
 
+Statisch laden mol-bestanden:
   - [x] 1. Ruimtelijke structuren
   - [x] a. Methaan, tetraeder
   - [x] b. Ethaan
