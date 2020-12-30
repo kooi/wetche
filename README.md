@@ -43,3 +43,7 @@ Statisch laden mol-bestanden:
   - [x] c. Optische activiteit
   - [x] d. Substitutie mechanismen
   - [x] 5. Een testje
+
+## Notes
+ - OpenBabel accepts xyz file format but requires a double newline before EOF. Otherwise expects E-XYZ format.
+ - OpenBabel seems not to be able to read from the first line... ""
